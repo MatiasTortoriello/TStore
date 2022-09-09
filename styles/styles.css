@@ -65,4 +65,7 @@ body {
 #noticia{
     font-size: x-large;
     color: red;
+    display: flex;
+
 }
+
