@@ -56,3 +56,8 @@ body {
     text-decoration: none;
     color: black;
 }
+
+#noticia{
+    font-size: x-large;
+    color: red;
+}
