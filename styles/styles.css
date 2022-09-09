@@ -57,6 +57,11 @@ body {
     color: black;
 }
 
+.img-team{
+    width: 600;
+    height: 800;
+}
+
 #noticia{
     font-size: x-large;
     color: red;
