@@ -19,11 +19,9 @@ body {
 /**********SECCIÓN LOGIN**********/
 
 #login{
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 #login p{
@@ -57,17 +55,17 @@ body {
 .botonera-nav ul {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-end;
     padding-bottom: 20px;
 }
 
 .botonera-nav ul li{
-    padding-bottom: 20px;
-    display: inline-block;
+    padding-top: 1rem;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    text-align: center;
+    
     
 }
 
