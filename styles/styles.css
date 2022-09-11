@@ -11,11 +11,10 @@ body {
     background-image: url(/assets/Wallpapers/Main-Wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    
-    
-    
+    background-attachment: fixed;    
 }
+
+/**********SECCIÓN LOGIN**********/
 
 #login{
 
@@ -40,6 +39,8 @@ body {
     margin-top: 20px;
 }
 
+/**************SECCIÓN BOTONERA****************/
+
 .botonera-nav{
     /*display: flex;
     flex-direction: column;
@@ -52,14 +53,14 @@ body {
 }
 
 .botonera-nav ul {
-    display: inline-block;
+    text-align: center;
     padding-bottom: 20px;
 }
 
 .botonera-nav ul li{
     padding-bottom: 20px;
-    display: flex;
-    align-items: center;
+    display: inline-block;
+    text-align: center;
 }
 
 .botonera-nav ul li a{
