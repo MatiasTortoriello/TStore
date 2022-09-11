@@ -47,24 +47,34 @@ body {
     align-items: center;
     padding-bottom: 20px;*/
     list-style: none;
+    background-color: rgba(67, 71, 71, 0.418);
     margin: 0;
     padding: 0;
+    
     
 }
 
 .botonera-nav ul {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
     padding-bottom: 20px;
 }
 
 .botonera-nav ul li{
     padding-bottom: 20px;
     display: inline-block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
+    
 }
 
 .botonera-nav ul li a{
     text-decoration: none;
+    align-items: center;
 
 }
 
