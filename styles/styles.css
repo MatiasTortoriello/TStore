@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: medium;
+    font-weight: 400;
     background-image: url(/assets/Wallpapers/Main-Wallpaper.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,17 +34,12 @@ body {
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin: 1rem;
 }
 
 /**************SECCIÓN BOTONERA****************/
 
 .botonera-nav{
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;*/
     list-style: none;
     background-color: rgba(67, 71, 71, 0.418);
     margin: 0.5%;
@@ -55,18 +50,18 @@ body {
 .botonera-nav ul {
     display: flex;
     justify-content: space-around;
-    align-items: flex-end;
-    padding-bottom: 20px;
 }
 
 .botonera-nav ul li{
-    padding-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
-    
+    padding: 0.4rem;
+}
+
+.botonera-nav ul li:hover{
+    background-color: rgba(250, 235, 215, 0.103);
 }
 
 .botonera-nav ul li a{
