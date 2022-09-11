@@ -48,8 +48,9 @@ body {
     padding-bottom: 20px;*/
     list-style: none;
     background-color: rgba(67, 71, 71, 0.418);
-    margin: 0;
+    margin: 0.5%;
     padding: 0;
+    border: 1px solid rgb(255, 255, 255);
     
     
 }
