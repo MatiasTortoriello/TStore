@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +8,7 @@
 }
 
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: medium;
     background-image: url(/assets/Wallpapers/Main-Wallpaper.jpg);
     background-repeat: no-repeat;
@@ -49,16 +51,13 @@ body {
     background-color: rgba(67, 71, 71, 0.418);
     margin: 0.5%;
     padding: 0;
-    border: 1px solid rgb(255, 255, 255);
-    
-    
+    border: 1px solid rgb(255, 255, 255); 
 }
 
 .botonera-nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
     padding-bottom: 20px;
 }
 
@@ -75,7 +74,6 @@ body {
 .botonera-nav ul li a{
     text-decoration: none;
     align-items: center;
-
 }
 
 .img-team{
@@ -87,6 +85,5 @@ body {
     font-size: x-large;
     color: red;
     display: flex;
-
 }
 
