@@ -3,8 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    color: rgb(0, 0, 0);
-    text-shadow: 2px 2px rgba(150, 145, 145, 0.678);
 }
 
 body {
@@ -16,6 +14,7 @@ body {
     header{
         
         background-color: black;
+        color: rgba(228, 31, 31, 0.897);
         margin: 0px;
         padding: 0px;
         display: flex;
@@ -23,7 +22,7 @@ body {
         align-items: center;
         position: sticky;
         top: 0;
-        border-bottom: 1px solid orange;
+        border-bottom: 1px solid rgba(228, 31, 31, 0.897);;
     }
     header h1{
         margin: 20px 10px;
@@ -32,6 +31,7 @@ body {
         margin: 20px 10px;
     }
     header a{
+        color: red;
         text-decoration: none;
         margin-right: 15px;
         font-size: 20px;
@@ -232,6 +232,7 @@ body {
     margin: 10px;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 .menucontainer h3{
     text-align: center;
@@ -256,13 +257,68 @@ body {
 }
 .menucontain2{
     margin: 50px 20px;
+    align-items: center;
+    margin-top: 15%;
 }
+
 .menucontaintexto p{
-    color: orange;
+    color: rgba(228, 31, 31, 0.897);
     text-align: right;
    margin-top: 40rem;
    margin-left: 40rem;
    background-color: black;
    border-radius: 10px;
    padding: 15px;
+}
+.productosegundasection{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(228, 31, 31, 0.897);
+    margin-left: 83%;
+    margin-right: 10%;
+    padding-left: 10px;
+    border-radius: 10px;
+
+}
+.productosegundasection input{
+    width: 30px;
+
+
+}
+.productobotoncarrito img{
+    height: 40px;
+    width: 40px;
+}
+.productobotoncarrito a{
+    text-decoration: none;
+    color: black;
+}
+.productosimilares h2{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.masproductos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 50px;
+    
+
+}
+.otrosproductos{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.otrosproductos p{
+
+}
+.otrosproductos img{
+    width: 500px;
+    height: 300px;
 }
