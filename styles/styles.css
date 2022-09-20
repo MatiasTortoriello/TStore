@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     color: rgb(0, 0, 0);
-    text-shadow: 2px 2px rgba(150, 145, 145, 0.678);
 }
 
 body {
@@ -161,15 +160,25 @@ header a:hover {
 
 /************SECCIÓN CATEOGRÍAS****************/
 
+.categorias-title{
+    text-align: center;
+    margin: 1rem ;
+    font-weight: 700;
+}
+
+
 /*PRODUCT*/
-.categorias-lista {
+.categorias-lista{
+
     /*orientación flex*/
+    background-color: black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
+    border: 3px solid rgba(255, 0, 0, 0.719);
+    margin: 2rem;
     /*medidas*/
     width: 90%;
     height: auto;
@@ -179,9 +188,12 @@ header a:hover {
     padding: 0.5rem;
 }
 
-.categorias-lista .product-item {
-    width: 20%;
-    margin: 2%;
+.categorias-lista .categorias-div{
+
+	width: 20%;
+	margin: 2%;
+	border: 2px solid rgba(255, 0, 0, 0.719);
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
 
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
 
@@ -193,15 +205,20 @@ header a:hover {
     transition: all .4s;
 }
 
-.categorias-lista .product-item img {
-    width: 100%;
+.categorias-lista .categorias-div img{
+	width: 100%;
 }
 
-.categorias-lista .product-item a {
-    display: block;
-    width: 100%;
-    padding: 8px 0;
-    background: #2D3E50;
+.categorias-lista .categorias-div:hover{
+    background-color: black;
+    opacity: 70%;
+}
+
+.categorias-lista .categorias-div a{
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	background: #2D3E50;
 
     color: #fff;
     text-align: center;
@@ -209,23 +226,16 @@ header a:hover {
 }
 
 /*************************************/
-.categorias-title {
-    text-align: center;
-    margin-bottom: 10px;
-}
 
 
-.categorias-div {
+/*.categorias-div{*/
     /*medidas*/
-    height: 7rem;
+   /* height: 7rem;
     width: 10rem;
     margin: 0.3rem;
-
-    border: 2px solid red;
-
     background-color: rgb(255, 255, 255);
     text-align: center;
-}
+}*/
 
 #categorias-shooter {
     background-image: url(/assets/CategoríasVideojuegos/Best-action-game-for-android.jpg);
