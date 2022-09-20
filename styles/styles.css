@@ -39,6 +39,8 @@ body {
     header a:hover{
         text-decoration: underline;
     }
+
+    
 /**********SECCIÓN LOGIN**********/
 
 #logeo {
@@ -220,7 +222,7 @@ body {
 
 #noticia {
     font-size: x-large;
-    color: red;
+    color: rgb(204, 27, 27);
     display: flex;
 }
 
