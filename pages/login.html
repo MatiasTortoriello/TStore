@@ -1,31 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="es">
 
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
-    
-    <!--------------IMPORTACIÓN DE FUENTES---------------------->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <title>TMT Store</title>
 
 </head>
 
-<header>
-
-    <h1 class="titulo">TMT Store</h1>
-    
-</header>
-
-<body>
-
-   <!---- <a id="login" href="pages/login.html">
-        <p>LOGIN</p>
-    </a>-->
+<body id="logeo">
+    <header>
+        <nav class="botonera-nav">
+            <ul>
+                <li><a href="/pages/home.html">Home</a></li>
+                <li><a href="/pages/categorias.html">Categorias</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="/pages/nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main id="main-login">
         <section>
@@ -36,21 +29,15 @@
                         required class="campos-login">
                     <label class="campos-login">Contraseña</label> <input type="password" placeholder="Contraseña"
                         required class="campos-login">
-                    <a href="#" class="contrasenia-olvidada-login">¿Olvido su contraseña?</a>
+                    <a href="home.html" class="contrasenia-olvidada-login">¿Olvido su contraseña?</a>
                     
-                    <a href="/pages/home.html" class="button-login">Iniciar Sesion</a>
+                   <input type="submit" value="Iniciar Sesion" class="button-login">
+                    <a href="home.html" class="button-login">Iniciar Sesion</a>
                     <span>¿No tenes cuenta? <a href="registro.html">Registrate</a></span>
                 </form>
             </article>
         </section>
     </main>
 
-    
-    
-</body>
-
-<footer>
-
-</footer>
 
 </html>
