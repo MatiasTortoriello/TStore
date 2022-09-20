@@ -15,35 +15,29 @@
                 <li><a href="/pages/home.html">Home</a></li>
                 <li><a href="/pages/categorias.html">Categorias</a></li>
                 <li><a href="#">Noticias</a></li>
-                <li><a href="/pages/nosotros.html">Nostoros</a></li>
+                <li><a href="/pages/nosotros.html">Nosotros</a></li>
             </ul>
         </nav>
     </header>
-    <div class="formulario">
-        <h1>Inicio de Sesion</h1>
-        <form>
-            <!--Usuario-->
-            <div class="username">
-                <label>Nombre de Usuario</label>
-                <input type="text" class="campos-login" required
-                    placeholder="Nombre de Usuario">
-            </div>
-            <!--Contraseña-->
-            <div class="password">
-                <label>Contraseña</label><input type="password" class="campos-login" required placeholder="Contraseña">
-            </div>
-            <div class="recordar">¿Olvidaste tu contraseña?</div>
-            <!--Login button-->
-            <input type="submit" value="Login">
-            <div>
-                <p>¿No tenes cuenta?</p>
-                <a href="/pages/registro.html" class="registro">Registrate</a>
-            </div>
-        </form>
-    </div>
 
-    </div>
-
+    <main id="main-login">
+        <section>
+            <article>
+                <h1>Inicio de Sesion</h1>
+                <form class="form-login">
+                    <label class="campos-login">Usuario</label> <input type="text" placeholder="Nombre de Usuario"
+                        required class="campos-login">
+                    <label class="campos-login">Contraseña</label> <input type="password" placeholder="Contraseña"
+                        required class="campos-login">
+                    <a href="home.html" class="contrasenia-olvidada-login">¿Olvido su contraseña?</a>
+                    
+                   <input type="submit" value="Iniciar Sesion" class="button-login">
+                    <a href="home.html" class="button-login">Iniciar Sesion</a>
+                    <span>¿No tenes cuenta? <a href="registro.html">Registrate</a></span>
+                </form>
+            </article>
+        </section>
+    </main>
 
 
 </html>
