@@ -12,35 +12,40 @@ body {
     font-weight: 400;
     background-color: white;
 }
-/**********SECCIÓN HEADER**********/
-    header{
-        
-        background-color: black;
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: sticky;
-        top: 0;
-        border-bottom: 1px solid orange;
-    }
-    header h1{
-        margin: 20px 10px;
-    }
-    header nav{
-        margin: 20px 10px;
-    }
-    header a{
-        text-decoration: none;
-        margin-right: 15px;
-        font-size: 20px;
-    }
-    header a:hover{
-        text-decoration: underline;
-    }
 
-    
+/**********SECCIÓN HEADER**********/
+header {
+
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid orange;
+}
+
+header h1 {
+    margin: 20px 10px;
+}
+
+header nav {
+    margin: 20px 10px;
+}
+
+header a {
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
 /**********SECCIÓN LOGIN**********/
 
 #logeo {
@@ -51,7 +56,7 @@ body {
 
 }
 
-#main-login{
+/*#main-login{
     background-color: bisque;
     width: 70%;
     margin: auto;
@@ -118,7 +123,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
+}*/
+
 
 
 /**************SECCIÓN BOTONERA****************/
@@ -156,7 +162,7 @@ body {
 /************SECCIÓN CATEOGRÍAS****************/
 
 /*PRODUCT*/
-.categorias-lista{
+.categorias-lista {
     /*orientación flex*/
     display: flex;
     flex-direction: row;
@@ -173,43 +179,43 @@ body {
     padding: 0.5rem;
 }
 
-.categorias-lista .product-item{
-	width: 20%;
-	margin: 2%;
-	
-	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+.categorias-lista .product-item {
+    width: 20%;
+    margin: 2%;
 
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
 
-	transition: all .4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    transition: all .4s;
 }
 
-.categorias-lista .product-item img{
-	width: 100%;
+.categorias-lista .product-item img {
+    width: 100%;
 }
 
-.categorias-lista .product-item a{
-	display: block;
-	width: 100%;
-	padding: 8px 0;
-	background: #2D3E50;
+.categorias-lista .product-item a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background: #2D3E50;
 
-	color: #fff;
-	text-align: center;
-	text-decoration: none;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
 }
 
 /*************************************/
-.categorias-title{
+.categorias-title {
     text-align: center;
-    margin-bottom: 10px ;
+    margin-bottom: 10px;
 }
 
 
-.categorias-div{
+.categorias-div {
     /*medidas*/
     height: 7rem;
     width: 10rem;
@@ -221,7 +227,7 @@ body {
     text-align: center;
 }
 
-#categorias-shooter{
+#categorias-shooter {
     background-image: url(/assets/CategoríasVideojuegos/Best-action-game-for-android.jpg);
     background-size: cover;
     background-position: center;
@@ -229,10 +235,11 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
 
 }
-#categorias-shooter a{
+
+#categorias-shooter a {
     color: rgb(255, 255, 255);
     text-shadow: 1px solid black;
 
@@ -241,10 +248,11 @@ body {
 
 /**************SECCIÓN TEAM******************/
 
-.img-team{
+.img-team {
     width: 600;
     height: 800;
 }
+
 .img-team {
     width: 600;
     height: 800;
@@ -258,22 +266,25 @@ body {
 
 /**************SECCIÓN DETALLES DEL PRODUCTO****************/
 
-.menucontainer{
+.menucontainer {
     margin: 10px;
     display: flex;
     flex-direction: row;
 }
-.menucontainer h3{
+
+.menucontainer h3 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 40px;
 }
-.menucontainer p{
+
+.menucontainer p {
     font-size: 22px;
     text-align: justify;
     padding-top: 50px;
 }
-.menucontain1{ 
+
+.menucontain1 {
     margin: 50px 50px;
     background: url(/assets/Wallpapers/Dark_Souls_Portada.jpg);
     background-position: center center;
@@ -282,19 +293,19 @@ body {
     */
     width: 80rem;
     height: 50rem;
-    
+
 }
-.menucontain2{
+
+.menucontain2 {
     margin: 50px 20px;
 }
-.menucontaintexto p{
+
+.menucontaintexto p {
     color: orange;
     text-align: right;
-   margin-top: 40rem;
-   margin-left: 40rem;
-   background-color: black;
-   border-radius: 10px;
-   padding: 15px;
+    margin-top: 40rem;
+    margin-left: 40rem;
+    background-color: black;
+    border-radius: 10px;
+    padding: 15px;
 }
-
-
