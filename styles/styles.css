@@ -82,6 +82,10 @@ body {
         border: solid 1px rgba(228, 31, 31, 0.897);
         font-weight: bold;
     }
+    header button:hover{
+        background-color: rgba(228, 31, 31, 0.897);
+        color: black;
+    }
 
 
 /**********SECCIÓN LOGIN**********/
@@ -490,12 +494,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-    background-color: rgba(228, 31, 31, 0.897);
-    margin-left: 83%;
-    margin-right: 10%;
-    padding-left: 10px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgb(0, 0, 0.8);
+   
 
 }
 .productosegundasection input{
@@ -503,9 +502,24 @@ body {
 
 
 }
+.productobotoncarrito{
+    background-color: rgba(228, 31, 31, 0.897);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0.8);
+    margin-right: 10%;  
+}
+.productobotoncarrito input{
+    height: 30px;
+    width: 50px;
+}
 .productobotoncarrito img{
-    height: 40px;
-    width: 40px;
+    height: 55px;
+    width: 55px;
+    padding-left: 25px;
 }
 .productobotoncarrito a{
     text-decoration: none;
