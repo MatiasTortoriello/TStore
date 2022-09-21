@@ -79,8 +79,6 @@ body {
     }
 
 
-
-
 /**********SECCIÓN LOGIN**********/
 
 #logeo {
@@ -422,6 +420,13 @@ body {
     padding: 10px 0px;
     color: #fff;
     text-decoration: none
+}
+/*.otrosproductos p{
+
+}*/
+.otrosproductos img{
+    width: 500px;
+    height: 300px;
 }
 
 .otrosproductos img{
