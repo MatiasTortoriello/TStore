@@ -98,6 +98,114 @@ body {
 
 }
 
+#main-login {
+    width: 100%;
+    height: 100%;
+}
+
+.section-login {
+    width: 100%;
+    height: 100%;
+}
+
+.login-article {
+    width: 100%;
+    height: 100%;
+   /* background-color: #399b12;*/
+}
+
+#cuerpo-login {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    background-image: url(/img/background-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.contenedor-login {
+    width: 20rem;
+    height: 26.25rem;
+    background: rgb(90, 87, 87);
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 4.375rem 1.875rem;
+    border: 2px solid black;
+    box-shadow: 0.5rem 0.75rem 1.25rem black;
+}
+
+.avatar-login {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 3.125rem);
+}
+
+.contenedor-login h1 {
+    margin: 0;
+    padding: 0 0 1.25rem;
+    text-align: center;
+    font-size: 1.875rem;
+}
+
+.contenedor-login label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.contenedor-login input {
+    margin-bottom: 1.25rem;
+    width: 100%;
+}
+
+.contenedor-login input[type="text"],
+.contenedor-login input[type="password"] {
+    border: none;
+    border-bottom: 0.063rem solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contenedor-login input[type="submit"] {
+    border: 1px solid #000;
+    border-radius: 1.8em;
+    height: 3em;
+    outline: none;
+    font-size: 1.125em;
+    background: #b80f22;
+    box-shadow: 0.325em 0.313em 0.813em #000;
+}
+
+.contenedor-login input[type="submit"]:hover {
+    cursor: pointer;
+    background: #bd9618;
+}
+
+.contenedor-login a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.contenedor-login a:hover {
+    color: #fff;
+
+}
+
 /*#main-login{
     background-color: bisque;
     width: 70%;
@@ -203,15 +311,15 @@ body {
 
 /************SECCIÓN CATEOGRÍAS****************/
 
-.categorias-title{
+.categorias-title {
     text-align: center;
-    margin: 1rem ;
+    margin: 1rem;
     font-weight: 700;
 }
 
 
 /*PRODUCT*/
-.categorias-lista{
+.categorias-lista {
 
     /*orientación flex*/
     background-color: black;
@@ -231,12 +339,12 @@ body {
     padding: 0.5rem;
 }
 
-.categorias-lista .categorias-div{
+.categorias-lista .categorias-div {
 
-	width: 20%;
-	margin: 2%;
-	border: 2px solid rgba(255, 0, 0, 0.719);
-	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+    width: 20%;
+    margin: 2%;
+    border: 2px solid rgba(255, 0, 0, 0.719);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
 
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.22);
 
@@ -248,20 +356,20 @@ body {
     transition: all .4s;
 }
 
-.categorias-lista .categorias-div img{
-	width: 100%;
+.categorias-lista .categorias-div img {
+    width: 100%;
 }
 
-.categorias-lista .categorias-div:hover{
+.categorias-lista .categorias-div:hover {
     background-color: black;
     opacity: 70%;
 }
 
-.categorias-lista .categorias-div a{
-	display: block;
-	width: 100%;
-	padding: 8px 0;
-	background: #2D3E50;
+.categorias-lista .categorias-div a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background: #2D3E50;
 
     color: #fff;
     text-align: center;
@@ -272,8 +380,8 @@ body {
 
 
 /*.categorias-div{*/
-    /*medidas*/
-   /* height: 7rem;
+/*medidas*/
+/* height: 7rem;
     width: 10rem;
     margin: 0.3rem;
     background-color: rgb(255, 255, 255);
