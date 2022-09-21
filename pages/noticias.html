@@ -11,20 +11,29 @@
 
 <body>
 
-    <header>    
-
-        <h1 class="titulo">TMT - Videogames Store</h1>
-        <h2 class="titulo">Noticias</h2>
-
-
-        <nav class="botonera-nav">
-            <ul>
-                <li><a href="/pages/home.html">Home</a></li>
-                <li><a href="/pages/categorias.html">Categorias</a></li>
-                <li><a href="#">Noticias</a></li>
-            </ul>
-        </nav>
-
+    <header>
+        <section class="sectionheader">
+            <div class="columnasheader">
+                <a href="/index.html"><img class="logohomeheader" src="/img/Logo.png" alt=""></a>
+                
+            </div>
+            <div class="columnasheader">
+                <form action="/pages/categorias.html">
+                    <input class="buscador" type="text" placeholder="Realice su busqueda">
+                    <button class="buscadorbutton">Buscar</button>
+                </form>
+            </div>
+            <div class="columnasheader">
+                <nav class="headernav">
+                    <a href="/index.html" class="botonesnav">Home</a>
+                    <a href="categorias.html" class="botonesnav">Categorias</a>
+                    <a href="contacto.html" class="botonesnav">Contacto</a>
+                    <a href="miCuenta.html" class="botonesnav">Mi Cuenta</a>
+                    <a href="login.html" class="botonesnav">Iniciar Sesion</a>
+                    <a href="carrito.html"><img class="carritoheader" src="/img/shopping_cart_white_24dp.svg" alt=""></a>
+                </nav>
+            </div>
+        </section>
     </header>
 
 
@@ -35,29 +44,24 @@
     
 
     <footer>
-        <hr>
-        <h3>Contacto</h3>
-        <p>Dejá tu consulta acá y la vamos a resolver cuando se nos dé la gana.</p>
-        <form action="_POST">
-            <label for="nombre">Nombre: </label>
-            <input type="text" name="nombre">
-
-            <label for="email">Mail: </label>
-            <input type="mail" name="email">
-
-            <label for="pais">País: </label>
-            <select name="pais" id="">
-                <option value="#">Seleccioná un País</option>
-                <option value="1">Argentina</option>
-                <option value="2">Uruguay</option>
-                <option value="3">Chile weon</option>
-                <option value="4">Perú</option>
-                <option value="5">Paraguay</option>
-                <option value="6">Bolivia</option>
-                <option value="7">Uganda</option>
-            </select>
-    
-        </form>
+        <section class="footersection">
+            <div class="columnasfooter">
+                <a href="home.html"><img class="logohomefooter" src="/img/Logo.png" alt=""></a>
+                <p id="footerhorario"><img class="relojfooter" src="/img/schedule_white_24dp.svg" alt="">Lunes a Sabado de 8 a 14hs. y de 16 a 20hs.</p>
+            </div>
+            <div class="columnasfooter">
+                <h3>Integrantes</h3>
+                <p>Menu Lisandro 44.341.895</p>
+                <p>Torres Fabio 44.392.603</p>
+                <p>Tortoriello Matias 35.533.516</p>
+            </div>
+            <div class="columnasfooter">
+                <h3>Seguinos en</h3>
+                <a href="#" target="_blank"><img class="logosfooter" src="/img/Facebook_icon_2013.svg.png" alt=""></a>
+                <a href="#" target="_blank"><img class="logosfooter" src="/img/Instagram_logo_2016.svg.png" alt=""></a>
+            </div>
+        </section>
+    </footer>
         
 
     </footer>
