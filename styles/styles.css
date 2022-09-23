@@ -540,9 +540,7 @@ footer h3{
 
 /********CAROUSEL********/
 
-
-  
-  .contenedor{
+  .contenedor {
     margin: auto;
     background-color: rgb(0, 0, 0);
     width: 95%;
@@ -554,6 +552,7 @@ footer h3{
  
   ul.slider{
     position: relative;
+    margin-top: 3.09rem;
     width: 800px;
     height: 300px;
     border: solid 10px white;
