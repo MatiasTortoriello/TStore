@@ -621,3 +621,96 @@ footer h3{
     border-radius: 100%;
     border: solid 2px black
   }
+
+
+  /***************************MI CUENTA**************************/
+  .micuenta{
+    margin-left: 7%;
+    margin-right: 7%;
+  }
+  .micuentanombre{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.5em;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .micuentanombrediv{
+    min-height: 70%;
+  }
+
+  #micuentanombrefoto{
+    width: calc(20% - 10px);
+    margin-right: 10.0em;
+    border: 4px solid black;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/Logos/user-logo-black.png);
+    background-size: cover;
+    min-height: 18.0em;
+    min-width: 18.0em;
+    margin: 0px auto;
+  }
+   
+  #micuentanombrenombre{
+    width: calc(70% - 10px);
+    font-size: 3.0em;
+    text-align: left;
+  }
+  .micuentanombre h3{
+    color:rgb(204, 27, 27);
+    text-shadow: 1px 1px 3px black;
+  }
+  
+  .misdirecciones{
+    display: flex;
+    flex-direction: row;
+    margin-top: 3.0em;
+    justify-content: space-between;
+    font-size: 2.0em;
+  }
+  .misdirecciones button{
+    font-size: 0.8em;
+    font-weight: bold;
+    min-width: 6.0em;
+    border: 2px solid black;
+    background-color: rgb(204, 27, 27);
+  }
+  .misdirecciones a:hover{
+  text-decoration: underline;
+    
+  }
+  .misdirecciones a{
+    text-decoration: none;
+    }
+   .misdirecciones h3{
+    color: rgb(204, 27, 27);
+   } 
+
+  .direcciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 3.5em;
+    }
+  .direccionesdiv{
+    width: calc(50%);
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+  }
+  .direccionesdiv p{
+    padding: 20px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.205);
+  }
+  .direccionesdiv img{
+    max-height: 35px;
+    max-width: 35px;
+    position: absolute;
+    right: -35px;
+  }
+  #alias{
+    background-color: rgba(128, 128, 128, 0.384);
+    }      
+
