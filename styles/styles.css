@@ -741,10 +741,7 @@ li{
 
 
 /**************SECCIÓN FOOTER****************/
-footer{
 
-
-}
 footer section{
     display: flex;
     flex-direction: row;
@@ -846,9 +843,10 @@ footer h3{
     min-width: 6.0em;
     border: 2px solid black;
     background-color: rgb(204, 27, 27);
+    border-radius: 4px;
   }
   .misdirecciones a:hover{
-  text-decoration: underline;
+  color: white;
     
   }
   .misdirecciones a{
@@ -930,6 +928,7 @@ footer h3{
  }
  #contactoform{
     border-right: 3px solid rgb(204, 27, 27);
+    position: relative;
  }
  #contactoform p{
     margin: 14px 0px;
@@ -965,6 +964,7 @@ footer h3{
     border: 1px black solid;
     border-radius: 5px;
 
+
  }
  .paginacontactoboton:hover{
     background-color: white;
@@ -990,4 +990,8 @@ footer h3{
  .paginacontactomapa{
     margin-top: 7.0em;
     width: 100%;
+ }
+ .paginacontacto h6{
+    font-size: 1.4em;
+    margin: 50px 0px;
  }
