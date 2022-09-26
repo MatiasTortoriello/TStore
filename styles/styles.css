@@ -314,7 +314,7 @@ li{
 
 }
 
-.novedades-article .mas-vendidos-div:hover {
+.novedades-article .novedades-div:hover {
     background-color: black;
     filter: brightness(70%);
 
@@ -336,6 +336,61 @@ li{
     text-decoration: none;
     border-top: 5px solid #000;
 }
+
+/****MEDIOS DE PAGO****/
+
+.medios-de-pago-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;   
+    margin-top: 1rem; 
+}
+
+.medios-de-pago-section .medios-de-pago-article{
+
+        /*orientación flex*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        
+        /*estilos*/
+        background-color: rgba(12, 10, 10, 0.048);
+        border: 1px solid rgba(0, 0, 0, 0.158);
+        
+        /*medidas*/
+        width: 99.9%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+           
+
+}
+
+.medios-de-pago-article .medios-de-pago-div{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.medios-de-pago-article .medios-de-pago-div p{
+    margin-top: 1rem;
+    font-size: larger;
+}
+
+.medios-de-pago-article .medios-de-pago-div img{
+    margin-top: 1rem;
+    font-size: larger;
+}
+
+
+
+
+
 
 
 
