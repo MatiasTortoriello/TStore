@@ -627,6 +627,23 @@ li{
     border: 1px solid rgba(0, 0, 0, 0.205);
 }
 
+.tachito-carrito{
+    background-image: url(/assets/svg/trash-solid.svg);
+    height: 1.5rem;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    padding: 0.2rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.2rem;
+}
+
+.columna-tachito-carrito{
+    position: absolute;
+    left: 91%;
+    top: 44%;
+    width: 5%;
+}
+
 
 /**************SECCIÓN FOOTER****************/
 
