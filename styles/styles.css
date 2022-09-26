@@ -185,7 +185,28 @@ li{
     flex-direction: column;
     align-items: center;
 }
-
+.presentacion-tienda h3{
+    font-size: 3.5rem;
+   color: rgb(204, 27, 27); 
+}
+.presentacion-tienda p{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 1.7rem;
+}
+.mas-vendidos-section h3{
+    font-size: 2.0rem;
+    color: rgb(204, 27, 27);
+}
+.novedades-section h3{
+    font-size: 2.0rem;
+    color: rgb(204, 27, 27);
+}
+.medios-de-pago-section h3{
+    font-size: 2.0rem;
+    color: rgb(204, 27, 27);
+    margin-bottom: 2.0rem;
+}    
 /******MÁS VENDIDOS******/
 
 .mas-vendidos-section{
@@ -205,7 +226,7 @@ li{
      align-items: center;
  
      /*estilos*/
-     background-color: rgb(65, 63, 63);
+     background-color: rgba(0, 0, 0, 0.205);
      border: 3px solid rgba(255, 0, 0, 0.719);
      margin: 2rem;
  
@@ -235,6 +256,8 @@ li{
 .mas-vendidos-article .mas-vendidos-div img{
     width: 100%;
     border-top: 5px solid #000;
+    max-height: 13rem;
+    min-height: 13rem;
 
 }
 
@@ -280,7 +303,7 @@ li{
     align-items: center;
     
     /*estilos*/
-    background-color: rgb(65, 63, 63);
+    background-color: rgba(0, 0, 0, 0.205);
     border: 3px solid rgba(255, 0, 0, 0.719);
     margin: 2rem;
     
@@ -311,6 +334,8 @@ li{
 .novedades-article .novedades-div img{
     width: 100%;
     border-top: 5px solid #000;
+    max-height: 13rem;
+    min-height: 13rem;
 
 }
 
@@ -669,6 +694,8 @@ li{
 .categorias-lista .categorias-div img {
     width: 100%;
     border-top: 5px solid #000;
+    max-height: 13em;
+    min-height: 13em;
 }
 
 .categorias-lista .categorias-div:hover {
@@ -726,7 +753,7 @@ li{
     background-repeat: no-repeat;
 }
 #portadadarksouls{
-    background-image: url(/assets/ImgJuegos/Rol/Dark_Souls_Portada.jpg);
+    background-image: url(/assets/ImgJuegos/Accion/Dark_Souls_Portada.jpg);
     background-position: center center;
     position: relative;
     z-index: -1;
