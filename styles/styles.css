@@ -118,6 +118,82 @@ li{
     align-items: center;
 }
 
+.mas-vendidos-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mas-vendidos-article{
+     /*orientación flex*/
+    
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+ 
+     /*estilos*/
+     background-color: rgb(65, 63, 63);
+     border: 3px solid rgba(255, 0, 0, 0.719);
+     margin: 2rem;
+ 
+     /*medidas*/
+     width: 90%;
+     height: auto;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 1rem;
+     padding: 0.5rem;
+}
+
+.mas-vendidos-article .mas-vendidos-div{
+    width: 20%;
+    margin: 2%;
+    border: 5px solid rgb(114, 8, 8);
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.22);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    transition: all .4s;
+}
+
+.mas-vendidos-article .mas-vendidos-div img{
+    width: 100%;
+    border-top: 5px solid #000;
+
+}
+
+.mas-vendidos-article .mas-vendidos-div:hover {
+    background-color: black;
+    filter: brightness(70%);
+
+}
+
+.mas-vendidos-article .mas-vendidos-div a{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background: #000000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mas-vendidos-article .mas-vendidos-div a p{
+    color: rgb(209, 209, 209);
+    text-align: center;
+    text-decoration: none;
+    border-top: 5px solid #000;
+}
+
+.novedades-home{
+
+}
+
 /*.presentacion-tienda h3{
 
 }*/
@@ -487,18 +563,6 @@ li{
     text-decoration: none;
     border-top: 5px solid #000;
 }
-
-/*************************************/
-
-
-/*.categorias-div{*/
-/*medidas*/
-/* height: 7rem;
-    width: 10rem;
-    margin: 0.3rem;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-}*/
 
 /**************SECCIÓN TEAM******************/
 
