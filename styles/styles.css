@@ -711,7 +711,10 @@ li{
 
 
 /**************SECCIÓN FOOTER****************/
+footer{
 
+
+}
 footer section{
     display: flex;
     flex-direction: row;
@@ -875,3 +878,87 @@ footer h3{
  #pagoalias{
         background-color: rgba(128, 128, 128, 0.384); ;
     }
+
+    /*****************************CONTACTO***************************/
+ .paginacontacto{
+    margin: 0% 7%;
+ }
+ .paginacontacto h2{
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
+    font-size: 3.0em;
+    color: rgb(204, 27, 27);
+    text-shadow: 3px 3px 3px black;
+ }
+ .contactoydatos{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+ }
+ .contactoydatosdiv{
+    width: calc(50%);
+ }
+ #contactoform{
+    border-right: 3px solid rgb(204, 27, 27);
+ }
+ #contactoform p{
+    margin: 14px 0px;
+    color: rgb(204, 27, 27);
+    font-weight: bold;
+    text-shadow: 1px 1px 0.5px black;
+    font-size: 1.3em;
+ }
+ #contactoform input{
+    min-width: 50%
+ }
+ #contactoform textarea{
+    min-width: 50%;
+ }
+
+ .nombreyemail{
+    padding: 7px 5px;
+    border: rgb(204, 27, 27) solid 2px;
+    border-radius: 5px;
+ }
+ .dejanosmensaje{
+
+    border: rgb(204, 27, 27) solid 2px;
+    border-radius: 5px; 
+
+ }
+ .paginacontactoboton{
+    padding: 20px;
+    color: white;
+    background-color: rgb(204, 27, 27);
+    font-weight: bold;
+    font-size: 1.3em;
+    border: 1px black solid;
+    border-radius: 5px;
+    position: absolute;
+
+ }
+ .paginacontactoboton:hover{
+    background-color: white;
+    color: rgb(204, 27, 27);
+    border: black 1px solid;
+ }
+ .paginacontacto h3{
+    color: rgb(204, 27, 27);
+    text-shadow: 1px 1px 1px black;
+    font-size: 2.0em;
+    margin-bottom: 30px;
+ }
+ #contactodatos{
+    margin-left: 50px;
+ }
+ #contactodatos  p{
+ font-size: 1.3em;
+ margin: 10px 0px;
+ }
+ #contactodatos h4{
+    margin-top: 30px;
+ }
+ .paginacontactomapa{
+    margin-top: 7.0em;
+    width: 100%;
+ }
