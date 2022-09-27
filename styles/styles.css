@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /******ETIQUETAS GENERALES*********/
 * {
     margin: 0;
@@ -12,103 +13,104 @@ body {
     background-color: white;
 }
 
-li{
+li {
     list-style: none;
 }
 
 /**********SECCIÓN HEADER**********/
 
-    header{
-        position: sticky;
-        top: 0;
-        z-index: 100000;
-    }
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100000;
+}
 
-    .sectionheader{
-        
-        background-color: black;
-        color: rgba(228, 31, 31, 0.897);
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: sticky;
-        top: 0;
-        border-bottom: 1px solid rgba(228, 31, 31, 0.897);;
-    }
+.sectionheader {
 
-    .headernav{
-        display: flex;
-        align-items: center;
-    }
+    background-color: black;
+    color: rgba(228, 31, 31, 0.897);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgba(228, 31, 31, 0.897);
+    ;
+}
 
-    .columnasheader{
-        margin-top: 30px;
-    }
+.headernav {
+    display: flex;
+    align-items: center;
+}
 
-    .logohomeheader{
-        height: 90px;
-        width: 220px;
-        margin-bottom: 30px;
-        margin-left: 30px;
-        border: solid 1px rgba(228, 31, 31, 0.897);
-    }
+.columnasheader {
+    margin-top: 30px;
+}
 
-    .carritoheader{
-        
-        height: 30px;
-        width: 30px;
-        border-radius: 5px;
-        padding: 5px 5px;
-       
-    }
+.logohomeheader {
+    height: 90px;
+    width: 220px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    border: solid 1px rgba(228, 31, 31, 0.897);
+}
 
-    header h1{
-        margin: 20px 0px;
-        color: rgba(228, 31, 31, 0.897);
-        text-align: center;
-    }
+.carritoheader {
 
-    header nav{
-        margin: 20px 10px;
-        margin-bottom: 40px;
-    }
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    padding: 5px 5px;
 
-    header a{
-        color: rgba(228, 31, 31, 0.897);
-        text-decoration: none;
-        margin-right: 15px;
-        font-size: 22px;
-        font-weight: bold;
-    }
+}
 
-    header a:hover{
-        text-decoration: underline;
-    }
+header h1 {
+    margin: 20px 0px;
+    color: rgba(228, 31, 31, 0.897);
+    text-align: center;
+}
 
-    .buscador{
-        padding-right: 18em;
-        height: 2.6em;
-        border: solid 1px rgba(228, 31, 31, 0.897);
-    }
+header nav {
+    margin: 20px 10px;
+    margin-bottom: 40px;
+}
 
-    .buscadorbutton{
-        height: 2.6em;
-        padding-right: 10px;
-        padding-left: 10px;
-        border: solid 1px rgba(228, 31, 31, 0.897);
-        font-weight: bold;
-    }
+header a {
+    color: rgba(228, 31, 31, 0.897);
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
 
-    header button:hover{
-        background-color: rgba(228, 31, 31, 0.897);
-        color: black;
-    }
+header a:hover {
+    text-decoration: underline;
+}
 
-/**********SECCIÓN HOME***********/    
+.buscador {
+    padding-right: 18em;
+    height: 2.6em;
+    border: solid 1px rgba(228, 31, 31, 0.897);
+}
 
-.presentacion-tienda{
+.buscadorbutton {
+    height: 2.6em;
+    padding-right: 10px;
+    padding-left: 10px;
+    border: solid 1px rgba(228, 31, 31, 0.897);
+    font-weight: bold;
+}
+
+header button:hover {
+    background-color: rgba(228, 31, 31, 0.897);
+    color: black;
+}
+
+/**********SECCIÓN HOME***********/
+
+.presentacion-tienda {
     margin-left: 5rem;
     margin-right: 5rem;
     margin-top: 1rem;
@@ -131,52 +133,52 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
- 
-  ul.slider{
+}
+
+ul.slider {
     position: relative;
     margin-top: 3.09rem;
     width: 800px;
     height: 300px;
     border: solid 3px rgb(204, 27, 27);
-  }
-  
-  ul.slider li {
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      opacity: 0;
-      width: inherit;
-      height: inherit;
-      transition: opacity .4s;
-      background:#fff;
-  }
-  
-  ul.slider li img{
+}
+
+ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .4s;
+    background: #fff;
+}
+
+ul.slider li img {
     width: 100%;
     height: 300px;
     object-fit: cover;
-  }
-  
-  ul.slider li:first-child {
-      opacity: 1; 
-  }
-  
-  ul.slider li:target {
-      opacity: 1;
-  }
-  
-  .menu-carousel{
+}
+
+ul.slider li:first-child {
+    opacity: 1;
+}
+
+ul.slider li:target {
+    opacity: 1;
+}
+
+.menu-carousel {
     text-align: center;
     margin: 20px;
-  }
-  
-  .menu-carousel li{
+}
+
+.menu-carousel li {
     display: inline-block;
     text-align: center;
-  }
-  
-  .menu-carousel li a{
+}
+
+.menu-carousel li a {
     display: inline-block;
 
     text-decoration: none;
@@ -186,7 +188,7 @@ li{
     height: 2px;
     border-radius: 100%;
     border: solid 2px black
-  }
+}
 
 
 /**********SECCIÓN LOGIN**********/
@@ -212,7 +214,7 @@ li{
 .login-article {
     width: 100%;
     height: 100%;
-   /* background-color: #399b12;*/
+    /* background-color: #399b12;*/
 }
 
 #cuerpo-login {
@@ -223,7 +225,7 @@ li{
     background-image: url(/assets/BackGrounds/background-login.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 .contenedor-login {
@@ -306,7 +308,7 @@ li{
     color: #fff;
 }
 
-.contenedor-registro{
+.contenedor-registro {
     width: 23rem;
     height: 33.25rem;
     background: rgb(90, 87, 87);
@@ -424,7 +426,7 @@ li{
 .categorias-lista {
 
     /*orientación flex*/
-    
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -481,7 +483,7 @@ li{
     text-decoration: none;
 }
 
-.categorias-lista .categorias-div a p{
+.categorias-lista .categorias-div a p {
     color: rgb(209, 209, 209);
     text-align: center;
     text-decoration: none;
@@ -520,77 +522,87 @@ li{
 
 /**************SECCIÓN DETALLES DEL PRODUCTO****************/
 
-.menucontainer{
+.menucontainer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     min-height: 80%;
     margin-top: 10px;
 }
-.menucontain{
+
+.menucontain {
     width: calc(40% - 10px);
     background-repeat: no-repeat;
 }
-#portadadarksouls{
+
+#portadadarksouls {
     background-image: url(/assets/ImgJuegos/Rol/Dark_Souls_Portada.jpg);
     background-position: center center;
     position: relative;
     z-index: -1;
     box-shadow: 5px 5px 5px;
-    
-}
-#portadadarksouls h3{
- background-color: rgba(228, 31, 31, 0.897);
 
- background-size: cover;
- position: absolute;
- right: 0.0em;
- bottom: 5.0em;
- border-radius: 10px 0px 0px 10px;
- min-height: 2.0em;
- min-width: 4.0em;
- text-align: center;
- padding-top: 8px;
- text-decoration: underline;
- 
 }
-#descripciondarksouls p{
+
+#portadadarksouls h3 {
+    background-color: rgba(228, 31, 31, 0.897);
+
+    background-size: cover;
+    position: absolute;
+    right: 0.0em;
+    bottom: 5.0em;
+    border-radius: 10px 0px 0px 10px;
+    min-height: 2.0em;
+    min-width: 4.0em;
+    text-align: center;
+    padding-top: 8px;
+    text-decoration: underline;
+
+}
+
+#descripciondarksouls p {
     text-align: left;
     font-size: 1.3em;
     margin-top: 3.0em;
 }
-#descripciondarksouls h3{
+
+#descripciondarksouls h3 {
     text-align: center;
     font-size: 3.0em;
     margin-top: 3.0em;
     color: rgba(228, 31, 31, 0.897);
     text-shadow: 1px 1px 3px black;
 }
-#descripciondarksouls ul{
+
+#descripciondarksouls ul {
     text-align: center;
     font-size: 1.5em;
     margin-top: 3.0em;
     color: rgba(228, 31, 31, 0.897);
 }
-#descripciondarksouls li{
-    color:rgba(228, 31, 31, 0.897) ;
+
+#descripciondarksouls li {
+    color: rgba(228, 31, 31, 0.897);
     margin-top: 0.7em;
 }
-.productosegundasection{
+
+.productosegundasection {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     text-align: center;
-   
+
 
 }
-.productosegundasection input{
+
+.productosegundasection input {
     width: 30px;
 
 
 }
-.productobotoncarrito{
+
+.productobotoncarrito {
     background-color: rgba(228, 31, 31, 0.897);
     display: flex;
     align-items: center;
@@ -601,27 +613,32 @@ li{
     margin-right: 10%;
 
 }
-.productobotoncarrito input{
+
+.productobotoncarrito input {
     height: 30px;
     width: 50px;
 }
-.productobotoncarrito img{
+
+.productobotoncarrito img {
     height: 55px;
     width: 55px;
     padding-left: 25px;
 }
-.productobotoncarrito a{
+
+.productobotoncarrito a {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
-.productosimilares h2{
+
+.productosimilares h2 {
     text-align: center;
     font-size: 3.0em;
     margin: 4.0em 0.0em;
     color: rgba(228, 31, 31, 0.897);
 }
-.masproductos{
+
+.masproductos {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -630,11 +647,13 @@ li{
     align-items: center;
 
 }
-.masproductos img{
+
+.masproductos img {
     border-bottom: rgba(228, 31, 31, 0.897) 1px solid;
     box-shadow: 3px 3px 3px rgb(0, 0, 0.8);
 }
-.otrosproductos{
+
+.otrosproductos {
     text-align: center;
     background-color: black;
     color: white;
@@ -642,7 +661,8 @@ li{
     box-shadow: 5px 5px 5px rgb(0, 0, 0.8);
     position: relative;
 }
-.otrosproductos h5{
+
+.otrosproductos h5 {
     background-color: rgba(228, 31, 31, 0.897);
     position: relative;
     right: 0px;
@@ -651,107 +671,205 @@ li{
     border-radius: 5px 0px 0px 5px;
     text-decoration: underline;
 }
-.otrosproductos a{
+
+.otrosproductos a {
     padding: 10px 0px;
     color: #fff;
     text-decoration: none;
 
 }
+
 /*.otrosproductos p{
 
 }*/
-.otrosproductos img{
+.otrosproductos img {
     width: 500px;
     height: 300px;
 }
 
-.otrosproductos img{
+.otrosproductos img {
     width: 370px;
     height: 240px;
 }
 
 /**************SECCIÓN CARRITO****************/
 
-.main-carrito{
-    margin: 0 10%;
+/*.main-carrito{
+    width: 100%;
+    height: 50%
 }
 
 .titulo-carrito{
     font-size: 2.5rem;
-    margin: 8.6rem 0px 1rem 0px;
+    margin: 3.6rem 0 1rem 0;
 }
 
-
 .contenedor-carrito{
+    display: flex;
+    background-color: bisque;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.fila-titulo-carrito{
+    box-sizing: border-box;
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.columna-mayor-carrito{
+    display: block;
+    width: 50%;
+}
+
+.columna-menor-carrito{
+    width: 20%;
+}
+
+.titulo-carrito {
+    font-size: 2.5rem;
+    margin: 8.6rem 0px 1rem 0px;
+}*/
+
+.main-carrito{
+    margin: auto 5rem;
+    height: 100%;
+}
+
+.titulo-carrito{
+    font-size: 2rem;
+    box-sizing: border-box;
+    margin: 2.5rem 0;
+}
+
+.contenedor-carrito {
     display: flex;
     margin: 1rem auto;
     padding: 0;
     width: 100%;
-    height: 35%;
+    height: 50%;
     flex-wrap: wrap;
 }
 
-.columna-carrito{
+.columna-carrito {
     height: 100%;
     width: 25%;
 }
 
-.columna-mayor-carrito{
+.columna-mayor-carrito {
     height: 100%;
-    width: 45%;
+    width: 40%;
     text-align: center;
 }
 
-.columna-menor-carrito{
+.columna-menor-carrito {
     height: 100%;
     width: 20%;
     text-align: center;
 }
 
-.linea-carrito{
-    background-color: rgba(128, 128, 128, 0.384);;
+.columna-tachito-carrito{
+    height: 100%;
+    width: 20%;
+    text-align:start
+}
+
+
+.linea-carrito {
+    background-color: rgba(128, 128, 128, 0.384);
     box-sizing: border-box;
     padding: 0.5rem;
     border: 1px solid rgba(0, 0, 0, 0.205);
 }
 
-.elemento-carrito{
+.linea-tachito-carrito{
+    box-sizing: border-box;
+    padding: 0.5rem;
+    
+}
+
+.elemento-carrito {
     background-color: #ffffff;
     box-sizing: border-box;
     padding: 0.5rem;
     border: 1px solid rgba(0, 0, 0, 0.205);
 }
 
-.tachito-carrito{
-   background-image: url(/assets/svg/trash-solid.svg);
-   background-size: 100%;
+.tachito-carrito {
+   /* background-image: url(/assets/svg/trash-solid.svg);
+    background-size: 100%;
     height: 1.5rem;
     background-repeat: no-repeat;
     box-sizing: border-box;
     padding: 0.2rem;
     margin-bottom: 0.8rem;
-    /*margin-top: 0.2rem;*/
+    margin-top: 0.2rem;
     width: 20px;
     margin-left: 0.4rem;
     margin-right: auto;
     margin-top: auto;
-    display: block;
-
+    display: block;*/
+    width: 2.125rem;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 0.5rem;
 }
 
-.columna-tachito-carrito{
-    /*position: absolute;*/
+.tachito-divisor-carrito{
+    height: 1.5rem;
+    box-sizing: border-box;
+    padding: 0.2rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.2rem;
+    width: 20px;
+    margin-left: 0.4rem;
+    margin-right: auto;
+    display: block;
+}
+
+/*.columna-tachito-carrito {
+    position: absolute;
     left: 91%;
     top: 44%;
     width: 5%;
     height: 80%;
     align-self: end;
+}*/
+
+.columna-menor-tachito button{
+    height: 15px;
+}
+
+.botoncito-pagar-carrito{
+    margin: 2rem auto;
+}
+
+.botoncito-pagar-carrito input{
+    width: 12rem;
+    height: 4rem;
+    background-color: rgb(204, 27, 27);
+    color: #fff;
+    border-style: none;
+    border: 1px solid black;
+    border-radius: 0.313rem;
+    box-shadow: 0.313rem 0.188rem 0.313rem rgb(15, 15, 15);
+    font-size: 1.2rem;
+}
+
+.botoncito-pagar-carrito input:hover{
+    cursor: pointer;
+    background-color: rgb(255, 250, 250);
+    color: rgba(175, 31, 31, 0.699);
 }
 
 
 /**************SECCIÓN FOOTER****************/
 
-footer section{
+footer section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -761,62 +879,72 @@ footer section{
     margin: 0px 0px;
     margin-top: 100px;
     border-top: solid 2px rgba(228, 31, 31, 0.897);
-   
+
 }
-footer img{
+
+footer img {
     height: 100px;
     width: 100px;
 }
-.columnasfooter{
+
+.columnasfooter {
     margin: 30px 5px;
 }
-footer p{
+
+footer p {
     color: rgba(228, 31, 31, 0.897);
     margin: 3px 0;
-    
+
 }
-footer h3{
+
+footer h3 {
     color: rgba(228, 31, 31, 0.897);
 }
-.logohomefooter{
+
+.logohomefooter {
     width: 180px;
     height: 80px;
     margin-bottom: 20px;
 }
-.logosfooter{
+
+.logosfooter {
     height: 40px;
     width: 40px;
     margin: 10px 2px;
 }
-.relojfooter{
+
+.relojfooter {
     height: 25px;
     width: 30px;
     margin-right: 10px;
 
 }
-#footerhorario{
+
+#footerhorario {
     display: flex;
     align-items: center;
 }
 
-  /***************************MI CUENTA**************************/
-  .micuenta{
+/***************************MI CUENTA**************************/
+.micuenta {
     margin-left: 7%;
     margin-right: 7%;
-  }
-  .micuentanombre{
+}
+
+.micuentanombre {
     display: flex;
     flex-direction: row;
     margin-top: 3.5em;
     align-items: center;
     justify-content: center;
 
-  }
-  .micuentanombrediv{
-    min-height: 70%;
-  }
+}
 
-  #micuentanombrefoto{
+.micuentanombrediv {
+    min-height: 70%;
+}
+
+#micuentanombrefoto {
     width: calc(20% - 10px);
     margin-right: 10.0em;
     border: 4px solid black;
@@ -827,144 +955,166 @@ footer h3{
     min-height: 18.0em;
     min-width: 18.0em;
     margin: 0px auto;
-  }
-   
-  #micuentanombrenombre{
+}
+
+#micuentanombrenombre {
     width: calc(70% - 10px);
     font-size: 3.0em;
     text-align: left;
-  }
-  .micuentanombre h3{
-    color:rgb(204, 27, 27);
+}
+
+.micuentanombre h3 {
+    color: rgb(204, 27, 27);
     text-shadow: 1px 1px 3px black;
-  }
-  
-  .misdirecciones{
+}
+
+.misdirecciones {
     display: flex;
     flex-direction: row;
     margin-top: 3.0em;
     justify-content: space-between;
     font-size: 2.0em;
-  }
-  .misdirecciones button{
+}
+
+.misdirecciones button {
     font-size: 0.8em;
     font-weight: bold;
     min-width: 6.0em;
     border: 2px solid black;
     background-color: rgb(204, 27, 27);
     border-radius: 4px;
-  }
-  .misdirecciones a:hover{
-  color: white;
-    
-  }
-  .misdirecciones a{
-    text-decoration: none;
-    }
-   .misdirecciones h3{
-    color: rgb(204, 27, 27);
-   } 
+}
 
-  .direcciones{
+.misdirecciones a:hover {
+    color: white;
+
+}
+
+.misdirecciones a {
+    text-decoration: none;
+}
+
+.misdirecciones h3 {
+    color: rgb(204, 27, 27);
+}
+
+.direcciones {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin-top: 3.5em;
-    }
-  .direccionesdiv{
+}
+
+.direccionesdiv {
     width: calc(50%);
     text-align: center;
     font-size: 1.5em;
     position: relative;
-  }
-  .direccionesdiv p{
+}
+
+.direccionesdiv p {
     padding: 20px 0px;
     border: 1px solid rgba(0, 0, 0, 0.205);
-  }
-  .direccionesdiv img{
+}
+
+.direccionesdiv img {
     max-height: 35px;
     max-width: 35px;
     position: absolute;
     right: -35px;
-  }
-  #alias{
+}
+
+#alias {
     background-color: rgba(128, 128, 128, 0.384);
-    }
- .metodospago{
-        display: flex;
-        margin-top: 3.0em;
-    }
- .metodospago p{
+}
+
+.metodospago {
+    display: flex;
+    margin-top: 3.0em;
+}
+
+.metodospago p {
     padding: 20px 0px;
     border: 1px solid rgba(0, 0, 0, 0.205);
- }
- .metodospago img{
+}
+
+.metodospago img {
     max-height: 35px;
     max-width: 35px;
     position: absolute;
     right: -35px;
- }
+}
 
- .mismetodosdiv{
-        width: calc(100%);
-        text-align: center;
-        font-size: 1.5em;
-        position: relative;
-    }
+.mismetodosdiv {
+    width: calc(100%);
+    text-align: center;
+    font-size: 1.5em;
+    position: relative;
+}
 
- #pagoalias{
-        background-color: rgba(128, 128, 128, 0.384); ;
-    }
+#pagoalias {
+    background-color: rgba(128, 128, 128, 0.384);
+    ;
+}
 
-    /*****************************CONTACTO***************************/
- .paginacontacto{
+/*****************************CONTACTO***************************/
+.paginacontacto {
     margin: 0% 7%;
- }
- .paginacontacto h2{
+}
+
+.paginacontacto h2 {
     margin-top: 1.0em;
     margin-bottom: 1.0em;
     font-size: 3.0em;
     color: rgb(204, 27, 27);
     text-shadow: 3px 3px 3px black;
- }
- .contactoydatos{
+}
+
+.contactoydatos {
     display: flex;
     flex-direction: row;
     position: relative;
- }
- .contactoydatosdiv{
+}
+
+.contactoydatosdiv {
     width: calc(50%);
- }
- #contactoform{
+}
+
+#contactoform {
     border-right: 3px solid rgb(204, 27, 27);
     position: relative;
- }
- #contactoform p{
+}
+
+#contactoform p {
     margin: 14px 0px;
     color: rgb(204, 27, 27);
     font-weight: bold;
     text-shadow: 1px 1px 0.5px black;
     font-size: 1.3em;
- }
- #contactoform input{
-    min-width: 50%
- }
- #contactoform textarea{
-    min-width: 50%;
- }
+}
 
- .nombreyemail{
+#contactoform input {
+    min-width: 50%
+}
+
+#contactoform textarea {
+    min-width: 50%;
+}
+
+.nombreyemail {
     padding: 7px 5px;
     border: rgb(204, 27, 27) solid 2px;
     border-radius: 5px;
- }
- .dejanosmensaje{
+}
+
+.dejanosmensaje {
 
     border: rgb(204, 27, 27) solid 2px;
-    border-radius: 5px; 
+    border-radius: 5px;
 
- }
- .paginacontactoboton{
+}
+
+.paginacontactoboton {
     padding: 20px;
     color: white;
     background-color: rgb(204, 27, 27);
@@ -974,33 +1124,40 @@ footer h3{
     border-radius: 5px;
 
 
- }
- .paginacontactoboton:hover{
+}
+
+.paginacontactoboton:hover {
     background-color: white;
     color: rgb(204, 27, 27);
     border: black 1px solid;
- }
- .paginacontacto h3{
+}
+
+.paginacontacto h3 {
     color: rgb(204, 27, 27);
     text-shadow: 1px 1px 1px black;
     font-size: 2.0em;
     margin-bottom: 30px;
- }
- #contactodatos{
+}
+
+#contactodatos {
     margin-left: 50px;
- }
- #contactodatos  p{
- font-size: 1.3em;
- margin: 10px 0px;
- }
- #contactodatos h4{
+}
+
+#contactodatos p {
+    font-size: 1.3em;
+    margin: 10px 0px;
+}
+
+#contactodatos h4 {
     margin-top: 30px;
- }
- .paginacontactomapa{
+}
+
+.paginacontactomapa {
     margin-top: 7.0em;
     width: 100%;
- }
- .paginacontacto h6{
+}
+
+.paginacontacto h6 {
     font-size: 1.4em;
     margin: 50px 0px;
- }
+}
