@@ -3,9 +3,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Agregar Direccion</title>
 </head>
 <body>
-    
+    <section class="agregardireccion">
+        <div class="agregardirecciondiv">
+            <img src="/assets/svg/house-solid.svg" alt="">
+            <h3>Agregar Direccion</h3>
+            <form action="/pages/miCuenta.html">
+
+                <p>Alias</p>
+                <input type="text" placeholder="Alias">
+                <p>Provincia</p>
+                <select name="provincias" id="">
+                    <option value="1">Buenos Aires</option>
+                    <option value="2">La Pampa</option>
+                    <option value="3">Cordoba</option>
+                    <option value="4">Santa Fe</option>
+                    <option value="5">Neuquen</option>
+                </select>
+                <p>Localidad</p>
+                <select name="localidades" id="">
+                    <option value="1">San Justo</option>
+                    <option value="2">Moron</option>
+                    <option value="3">Ituzaingo</option>
+                    <option value="4">Ramos Mejía</option>
+                    <option value="5">La Ferrere</option>
+                </select>
+                <p>Direccion</p>
+                <input type="text" placeholder="Direccion">
+                <p>Teléfono</p>
+                <input type="number" placeholder="Teléfono">
+                <article>
+                    <p>Piso <input type="number" id="dpto" ></p>
+                    <p>Dpto <input type="number" name="" id="dpto"></p>
+                </article>
+                <input type="submit" id="agregardireccionboton">
+            </form>
+
+        </div>
+    </section>
 </body>
 </html>
