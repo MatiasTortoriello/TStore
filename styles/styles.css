@@ -190,6 +190,251 @@ ul.slider li:target {
     border: solid 2px black
 }
 
+/******PRESENTACIÓN******/
+
+.presentacion-tienda{
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.presentacion-tienda h3{
+    font-size: 3.5rem;
+   color: rgb(204, 27, 27); 
+}
+.presentacion-tienda p{
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 1.7rem;
+}
+.mas-vendidos-section h3{
+    font-size: 2.0rem;
+    color: rgb(204, 27, 27);
+}
+.novedades-section h3{
+    font-size: 2.0rem;
+    color: rgb(204, 27, 27);
+}
+.medios-de-pago-section h3{
+    font-size: 2.0rem;
+    color: rgb(204, 27, 27);
+    margin-bottom: 2.0rem;
+}    
+/******MÁS VENDIDOS******/
+
+.mas-vendidos-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.mas-vendidos-article{
+     /*orientación flex*/
+    
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+ 
+     /*estilos*/
+     background-color: rgba(0, 0, 0, 0.205);
+     border: 3px solid rgba(255, 0, 0, 0.719);
+     margin: 2rem;
+ 
+     /*medidas*/
+     width: 90%;
+     height: auto;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 1rem;
+     padding: 0.5rem;
+}
+
+.mas-vendidos-article .mas-vendidos-div{
+    width: 20%;
+    margin: 2%;
+    border: 5px solid rgb(114, 8, 8);
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.22);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    transition: all .4s;
+}
+
+.mas-vendidos-article .mas-vendidos-div img{
+    width: 100%;
+    border-top: 5px solid #000;
+    max-height: 13rem;
+    min-height: 13rem;
+
+}
+
+.mas-vendidos-article .mas-vendidos-div:hover {
+    background-color: black;
+    filter: brightness(70%);
+
+}
+
+.mas-vendidos-article .mas-vendidos-div a{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background: #000000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mas-vendidos-article .mas-vendidos-div a p{
+    color: rgb(209, 209, 209);
+    text-align: center;
+    text-decoration: none;
+    border-top: 5px solid #000;
+}
+
+/****NOVEDADES****/
+
+.novedades-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;   
+    margin-top: 1rem;     
+}
+
+.novedades-section .novedades-article{
+
+    /*orientación flex*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    /*estilos*/
+    background-color: rgba(0, 0, 0, 0.205);
+    border: 3px solid rgba(255, 0, 0, 0.719);
+    margin: 2rem;
+    
+    /*medidas*/
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem;    
+
+}
+
+.novedades-article .novedades-div{
+    width: 20%;
+    margin: 2%;
+    border: 5px solid rgb(114, 8, 8);
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.22);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    transition: all .4s;
+}
+
+.novedades-article .novedades-div img{
+    width: 100%;
+    border-top: 5px solid #000;
+    max-height: 13rem;
+    min-height: 13rem;
+
+}
+
+.novedades-article .novedades-div:hover {
+    background-color: black;
+    filter: brightness(70%);
+
+}
+
+.novedades-article .novedades-div a{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background: #000000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.novedades-article .novedades-div a p{
+    color: rgb(209, 209, 209);
+    text-align: center;
+    text-decoration: none;
+    border-top: 5px solid #000;
+}
+
+/****MEDIOS DE PAGO****/
+
+.medios-de-pago-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;   
+    margin-top: 1rem; 
+}
+
+.medios-de-pago-section .medios-de-pago-article{
+
+        /*orientación flex*/
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        
+        /*estilos*/
+        background-color: rgba(12, 10, 10, 0.048);
+        border: 1px solid rgba(0, 0, 0, 0.158);
+        
+        /*medidas*/
+        width: 99.9%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+           
+
+}
+
+.medios-de-pago-article .medios-de-pago-div{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.medios-de-pago-article .medios-de-pago-div p{
+    margin-top: 1rem;
+    font-size: larger;
+}
+
+.medios-de-pago-article .medios-de-pago-div img{
+    margin-top: 1rem;
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
 
 /**********SECCIÓN LOGIN**********/
 
@@ -465,6 +710,8 @@ ul.slider li:target {
 .categorias-lista .categorias-div img {
     width: 100%;
     border-top: 5px solid #000;
+    max-height: 13em;
+    min-height: 13em;
 }
 
 .categorias-lista .categorias-div:hover {
@@ -489,18 +736,6 @@ ul.slider li:target {
     text-decoration: none;
     border-top: 5px solid #000;
 }
-
-/*************************************/
-
-
-/*.categorias-div{*/
-/*medidas*/
-/* height: 7rem;
-    width: 10rem;
-    margin: 0.3rem;
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-}*/
 
 /**************SECCIÓN TEAM******************/
 
@@ -534,9 +769,8 @@ ul.slider li:target {
     width: calc(40% - 10px);
     background-repeat: no-repeat;
 }
-
-#portadadarksouls {
-    background-image: url(/assets/ImgJuegos/Rol/Dark_Souls_Portada.jpg);
+#portadadarksouls{
+    background-image: url(/assets/ImgJuegos/Accion/Dark_Souls_Portada.jpg);
     background-position: center center;
     position: relative;
     z-index: -1;
