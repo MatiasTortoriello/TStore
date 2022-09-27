@@ -3,12 +3,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css">
     <title>Document</title>
 </head>
 <body>
-    <section>
+    <section class="metodosection">
         <div>
-            <h3>Nueva Tarjeta</h3>
+            <form action="/pages/miCuenta.html">
+
+                <h3>Nueva Tarjeta</h3><img src="/assets/svg/credit-card-regular.svg" alt="">
+                <p>Alias</p>
+                <input type="text" name="" id="">
+                <p>Numero tarjeta</p>
+                <input type="number">
+                <article>
+                    <p>Codigo <input type="number" id="ccv"></p>
+                    <p>Vencimiento <input type="date" id="ccv"></p>
+                </article>
+                <p>Nombre Titular</p>
+                <input type="text">
+                <input type="submit" id="metodosboton" value="Guardar">
+            </form>
         </div>
     </section>
 </body>
