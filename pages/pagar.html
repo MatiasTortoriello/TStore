@@ -1,11 +1,56 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Pagar</title>
 </head>
+
 <body>
-    
+    <main class="main-pagar">
+        <section class="section-pagar">
+            <article class="contenedor-pagar">
+
+                <div class="titulo-pagar">
+                    <h1>Pagar</h1>
+                    <div class="contenedor-imagen-pagar"><img src="/assets/svg/credit-card-regular.svg" alt=""></div>
+                </div>
+
+                <div class="form-pagar">
+                    <form action="/index.html">
+                        <div class="cosa-guardada-pagar"><label for="cards">Tarjetas Guardadas</label> <select
+                                name="Tarjetas Guardadas">
+                                <option selected>-- Seleccionar --</option>
+                                <option value="2">VISA</option>
+                                <option value="3">MasterCard</option>
+                                <option value="4">NaranjaX</option>
+                                <option value="5">UALA</option>
+                                <option value="6">Lemon Cash</option>
+                            </select>
+                        </div>
+                        <div class="otras-tarjetas-pagar">
+                            <input type="checkbox"> <label for="checkbox">Otra Tarjeta</label>
+                        </div>
+                        <div class="cosa-guardada-pagar"><label for="directions">Direcciones Guardadas</label> <select
+                                name="Direcciones Guardadas">
+                                <option selected>-- Seleccionar --</option>
+                                <option value="2">Florencio Varela 1903</option>
+                                <option value="3">Uganda 554</option>
+                                <option value="4">Ombu 1234</option>
+                            </select>
+                        </div>
+                        <div class="otras-tarjetas-pagar"><input type="checkbox"> <label for="checkbox">Otra
+                                Direccion</label>
+                        </div>
+                        <div class="botoncito-pagar"><input type="submit" value="Pagar"></div>
+                    </form>
+                </div>
+
+            </article>
+        </section>
+    </main>
 </body>
+
 </html>

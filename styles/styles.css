@@ -192,7 +192,7 @@ ul.slider li:target {
 
 /******PRESENTACIÓN******/
 
-.presentacion-tienda{
+.presentacion-tienda {
     margin-left: 5rem;
     margin-right: 5rem;
     margin-top: 1rem;
@@ -201,61 +201,67 @@ ul.slider li:target {
     flex-direction: column;
     align-items: center;
 }
-.presentacion-tienda h3{
+
+.presentacion-tienda h3 {
     font-size: 3.5rem;
-   color: rgb(204, 27, 27); 
+    color: rgb(204, 27, 27);
 }
-.presentacion-tienda p{
+
+.presentacion-tienda p {
     font-size: 1.3rem;
     text-align: center;
     margin-top: 1.7rem;
 }
-.mas-vendidos-section h3{
+
+.mas-vendidos-section h3 {
     font-size: 2.0rem;
     color: rgb(204, 27, 27);
 }
-.novedades-section h3{
+
+.novedades-section h3 {
     font-size: 2.0rem;
     color: rgb(204, 27, 27);
 }
-.medios-de-pago-section h3{
+
+.medios-de-pago-section h3 {
     font-size: 2.0rem;
     color: rgb(204, 27, 27);
     margin-bottom: 2.0rem;
-}    
+}
+
 /******MÁS VENDIDOS******/
 
-.mas-vendidos-section{
-    display:flex;
+.mas-vendidos-section {
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 1rem;
 }
 
-.mas-vendidos-article{
-     /*orientación flex*/
-    
-     display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
-     justify-content: center;
-     align-items: center;
- 
-     /*estilos*/
-     background-color: rgba(0, 0, 0, 0.205);
-     border: 3px solid rgba(255, 0, 0, 0.719);
-     margin: 2rem;
- 
-     /*medidas*/
-     width: 90%;
-     height: auto;
-     margin-left: auto;
-     margin-right: auto;
-     margin-bottom: 1rem;
-     padding: 0.5rem;
+.mas-vendidos-article {
+    /*orientación flex*/
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    /*estilos*/
+    background-color: rgba(0, 0, 0, 0.205);
+    border: 3px solid rgba(255, 0, 0, 0.719);
+    margin: 2rem;
+
+    /*medidas*/
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
 }
 
-.mas-vendidos-article .mas-vendidos-div{
+.mas-vendidos-article .mas-vendidos-div {
     width: 20%;
     margin: 2%;
     border: 5px solid rgb(114, 8, 8);
@@ -269,7 +275,7 @@ ul.slider li:target {
     transition: all .4s;
 }
 
-.mas-vendidos-article .mas-vendidos-div img{
+.mas-vendidos-article .mas-vendidos-div img {
     width: 100%;
     border-top: 5px solid #000;
     max-height: 13rem;
@@ -283,7 +289,7 @@ ul.slider li:target {
 
 }
 
-.mas-vendidos-article .mas-vendidos-div a{
+.mas-vendidos-article .mas-vendidos-div a {
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -293,7 +299,7 @@ ul.slider li:target {
     text-decoration: none;
 }
 
-.mas-vendidos-article .mas-vendidos-div a p{
+.mas-vendidos-article .mas-vendidos-div a p {
     color: rgb(209, 209, 209);
     text-align: center;
     text-decoration: none;
@@ -302,14 +308,14 @@ ul.slider li:target {
 
 /****NOVEDADES****/
 
-.novedades-section{
-    display:flex;
+.novedades-section {
+    display: flex;
     flex-direction: column;
-    align-items: center;   
-    margin-top: 1rem;     
+    align-items: center;
+    margin-top: 1rem;
 }
 
-.novedades-section .novedades-article{
+.novedades-section .novedades-article {
 
     /*orientación flex*/
     display: flex;
@@ -317,23 +323,23 @@ ul.slider li:target {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    
+
     /*estilos*/
     background-color: rgba(0, 0, 0, 0.205);
     border: 3px solid rgba(255, 0, 0, 0.719);
     margin: 2rem;
-    
+
     /*medidas*/
     width: 90%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
-    padding: 0.5rem;    
+    padding: 0.5rem;
 
 }
 
-.novedades-article .novedades-div{
+.novedades-article .novedades-div {
     width: 20%;
     margin: 2%;
     border: 5px solid rgb(114, 8, 8);
@@ -347,7 +353,7 @@ ul.slider li:target {
     transition: all .4s;
 }
 
-.novedades-article .novedades-div img{
+.novedades-article .novedades-div img {
     width: 100%;
     border-top: 5px solid #000;
     max-height: 13rem;
@@ -361,7 +367,7 @@ ul.slider li:target {
 
 }
 
-.novedades-article .novedades-div a{
+.novedades-article .novedades-div a {
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -371,7 +377,7 @@ ul.slider li:target {
     text-decoration: none;
 }
 
-.novedades-article .novedades-div a p{
+.novedades-article .novedades-div a p {
     color: rgb(209, 209, 209);
     text-align: center;
     text-decoration: none;
@@ -380,37 +386,37 @@ ul.slider li:target {
 
 /****MEDIOS DE PAGO****/
 
-.medios-de-pago-section{
-    display:flex;
+.medios-de-pago-section {
+    display: flex;
     flex-direction: column;
-    align-items: center;   
-    margin-top: 1rem; 
+    align-items: center;
+    margin-top: 1rem;
 }
 
-.medios-de-pago-section .medios-de-pago-article{
+.medios-de-pago-section .medios-de-pago-article {
 
-        /*orientación flex*/
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        
-        /*estilos*/
-        background-color: rgba(12, 10, 10, 0.048);
-        border: 1px solid rgba(0, 0, 0, 0.158);
-        
-        /*medidas*/
-        width: 99.9%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 1rem;
-           
+    /*orientación flex*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    /*estilos*/
+    background-color: rgba(12, 10, 10, 0.048);
+    border: 1px solid rgba(0, 0, 0, 0.158);
+
+    /*medidas*/
+    width: 99.9%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+
 
 }
 
-.medios-de-pago-article .medios-de-pago-div{
+.medios-de-pago-article .medios-de-pago-div {
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -418,12 +424,12 @@ ul.slider li:target {
     text-align: center;
 }
 
-.medios-de-pago-article .medios-de-pago-div p{
+.medios-de-pago-article .medios-de-pago-div p {
     margin-top: 1rem;
     font-size: larger;
 }
 
-.medios-de-pago-article .medios-de-pago-div img{
+.medios-de-pago-article .medios-de-pago-div img {
     margin-top: 1rem;
     font-size: larger;
 }
@@ -609,6 +615,15 @@ ul.slider li:target {
     font-size: 1rem;
 }
 
+.contenedor-botoncito-registro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-botoncito-registro input {
+    width: 45%;
+}
+
 .contenedor-registro input[type="submit"] {
     border: 1px solid #000;
     border-radius: 1.8em;
@@ -769,7 +784,8 @@ ul.slider li:target {
     width: calc(40% - 10px);
     background-repeat: no-repeat;
 }
-#portadadarksouls{
+
+#portadadarksouls {
     background-image: url(/assets/ImgJuegos/Accion/Dark_Souls_Portada.jpg);
     background-position: center center;
     position: relative;
@@ -928,53 +944,13 @@ ul.slider li:target {
 
 /**************SECCIÓN CARRITO****************/
 
-/*.main-carrito{
-    width: 100%;
-    height: 50%
-}
 
-.titulo-carrito{
-    font-size: 2.5rem;
-    margin: 3.6rem 0 1rem 0;
-}
-
-.contenedor-carrito{
-    display: flex;
-    background-color: bisque;
-    height: 100%;
-    flex-wrap: wrap;
-}
-
-.fila-titulo-carrito{
-    box-sizing: border-box;
-    padding: 0.5rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    border: 2px solid black;
-    text-align: center;
-}
-
-.columna-mayor-carrito{
-    display: block;
-    width: 50%;
-}
-
-.columna-menor-carrito{
-    width: 20%;
-}
-
-.titulo-carrito {
-    font-size: 2.5rem;
-    margin: 8.6rem 0px 1rem 0px;
-}*/
-
-.main-carrito{
+.main-carrito {
     margin: auto 5rem;
     height: 100%;
 }
 
-.titulo-carrito{
+.titulo-carrito {
     font-size: 2rem;
     box-sizing: border-box;
     margin: 2.5rem 0;
@@ -1006,10 +982,10 @@ ul.slider li:target {
     text-align: center;
 }
 
-.columna-tachito-carrito{
+.columna-tachito-carrito {
     height: 100%;
     width: 20%;
-    text-align:start
+    text-align: start
 }
 
 
@@ -1020,10 +996,10 @@ ul.slider li:target {
     border: 1px solid rgba(0, 0, 0, 0.205);
 }
 
-.linea-tachito-carrito{
+.linea-tachito-carrito {
     box-sizing: border-box;
     padding: 0.5rem;
-    
+
 }
 
 .elemento-carrito {
@@ -1034,26 +1010,13 @@ ul.slider li:target {
 }
 
 .tachito-carrito {
-   /* background-image: url(/assets/svg/trash-solid.svg);
-    background-size: 100%;
-    height: 1.5rem;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    padding: 0.2rem;
-    margin-bottom: 0.8rem;
-    margin-top: 0.2rem;
-    width: 20px;
-    margin-left: 0.4rem;
-    margin-right: auto;
-    margin-top: auto;
-    display: block;*/
     width: 2.125rem;
     background-color: #ffffff;
     box-sizing: border-box;
     padding: 0.5rem;
 }
 
-.tachito-divisor-carrito{
+.tachito-divisor-carrito {
     height: 1.5rem;
     box-sizing: border-box;
     padding: 0.2rem;
@@ -1065,24 +1028,15 @@ ul.slider li:target {
     display: block;
 }
 
-/*.columna-tachito-carrito {
-    position: absolute;
-    left: 91%;
-    top: 44%;
-    width: 5%;
-    height: 80%;
-    align-self: end;
-}*/
-
-.columna-menor-tachito button{
+.columna-menor-tachito button {
     height: 15px;
 }
 
-.botoncito-pagar-carrito{
+.botoncito-pagar-carrito {
     margin: 2rem auto;
 }
 
-.botoncito-pagar-carrito input{
+.botoncito-pagar-carrito input {
     width: 12rem;
     height: 4rem;
     background-color: rgb(204, 27, 27);
@@ -1094,11 +1048,97 @@ ul.slider li:target {
     font-size: 1.2rem;
 }
 
-.botoncito-pagar-carrito input:hover{
+.botoncito-pagar-carrito input:hover {
     cursor: pointer;
     background-color: rgb(255, 250, 250);
     color: rgba(175, 31, 31, 0.699);
 }
+
+/**************SECCION PAGAR******************/
+
+.section-pagar {
+    display: flex;
+    height: 100%;
+    background-image: url(/assets/BackGrounds/background-login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor-pagar {
+    margin: auto;
+    box-sizing: border-box;
+    padding: 2rem 3rem;
+    border: 3px solid rgb(204, 27, 27);
+    background-color: rgb(90, 87, 87);
+    font-weight: bold;
+    box-shadow: 0.5rem 0.75rem 1.25rem black;
+}
+
+.titulo-pagar {
+    display: flex;
+    align-items: center;
+}
+
+.titulo-pagar h1 {
+    font-size: 3rem;
+    margin-right: 1.5rem;
+}
+
+.contenedor-imagen-pagar img {
+    width: 3rem;
+}
+
+.cosa-guardada-pagar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1rem auto;
+}
+
+.cosa-guardada-pagar label {
+    width: 50%;
+    font-size: 1.2rem;
+}
+
+.cosa-guardada-pagar select {
+    width: 50%;
+    height: 1.4rem;
+    align-items: center;
+}
+
+.otras-tarjetas-pagar{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1rem auto;
+
+}
+
+.otras-tarjetas-pagar input[type="checkbox"]{
+    width: 25;
+    margin-right: 1.5rem;
+}
+
+.botoncito-pagar{
+    margin: 2rem auto;
+    display: flex;
+    justify-content: end;
+}
+
+.botoncito-pagar input{
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    box-shadow: 0.313rem 0.313rem 0.625rem rgb(0, 0, 0);
+    font-size: 1.1rem;
+    background-color: #b80f22;;
+    font-weight: bold;
+}
+
+.botoncito-pagar input:hover{
+    background-color: #861c1c;
+    cursor: pointer;
+}
+
 
 
 /**************SECCIÓN FOOTER****************/
@@ -1394,9 +1434,10 @@ footer h3 {
 .paginacontacto h6 {
     font-size: 1.4em;
     margin: 50px 0px;
- }
+}
+
 /**********************AGREGAR DIRECCION*********************/
-.agregardireccion{
+.agregardireccion {
     display: flex;
     height: 100vh;
     background-image: url(/assets/BackGrounds/background-login.jpg);
@@ -1404,7 +1445,7 @@ footer h3 {
     background-size: cover;
 }
 
-.agregardirecciondiv{
+.agregardirecciondiv {
     margin: auto;
     flex-direction: row;
     width: 16rem;
@@ -1414,17 +1455,19 @@ footer h3 {
     font-weight: bold;
     box-shadow: 0.5rem 0.75rem 1.25rem black;
     position: relative;
-    
+
 }
-.agregardireccion img{
+
+.agregardireccion img {
     height: 9rem;
     width: 9rem;
     position: absolute;
-    top:calc(-20%);
+    top: calc(-20%);
     left: calc(28.7%);
 }
-.agregardirecciondiv input{
-    width:calc(100%);
+
+.agregardirecciondiv input {
+    width: calc(100%);
     margin: 6px 0px;
     border: 1px solid rgb(90, 87, 87);
     background-color: rgb(90, 87, 87);
@@ -1432,27 +1475,32 @@ footer h3 {
     padding: 5px 0;
     color: white;
 }
-.agregardirecciondiv h3{
+
+.agregardirecciondiv h3 {
     margin-bottom: 20px;
     font-size: 1.5rem;
     text-align: center;
 }
-.agregardirecciondiv select{
+
+.agregardirecciondiv select {
     width: calc(100%);
-    margin: 6px 0px;  
-    background-color: rgb(90, 87, 87);  
-    border: 1px solid rgb(90, 87, 87); 
+    margin: 6px 0px;
+    background-color: rgb(90, 87, 87);
+    border: 1px solid rgb(90, 87, 87);
     border-bottom: 1px solid white;
     padding: 5px 0;
     color: white;
 }
-#dpto{
+
+#dpto {
     width: calc(45%);
 }
-.agregardirecciondiv article{
+
+.agregardirecciondiv article {
     display: flex;
 }
-#agregardireccionboton{
+
+#agregardireccionboton {
     border-radius: 1.8em;
     border: 2px solid black;
     background-color: rgb(204, 27, 27);
@@ -1461,9 +1509,10 @@ footer h3 {
     margin-top: 2rem;
     padding: 0.9rem 0;
     box-shadow: 0.325em 0.313em 0.813em #000;
-    
+
 }
-#agregardireccionboton:hover{
+
+#agregardireccionboton:hover {
     border: 2px solid rgb(204, 27, 27);
     background-color: white;
     color: rgb(204, 27, 27);
