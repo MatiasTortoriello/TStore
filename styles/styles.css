@@ -136,7 +136,7 @@ ul.slider {
     margin-top: 3.09rem;
     width: 800px;
     height: 300px;
-    border: solid 3px rgb(204, 27, 27);
+    border: solid 3px rgb(128, 8, 8);
 }
 
 ul.slider li {
@@ -536,13 +536,14 @@ ul.slider li:target {
     height: 3em;
     outline: none;
     font-size: 1.125em;
-    background: #b80f22;
+    background: rgb(163, 9, 9);
     box-shadow: 0.325em 0.313em 0.813em #000;
 }
 
 .contenedor-login input[type="submit"]:hover {
     cursor: pointer;
-    background: #bd9618;
+    background: rgb(128, 8, 8);
+    transition: 0.5s;
 }
 
 .contenedor-login a {
@@ -627,13 +628,14 @@ ul.slider li:target {
     height: 3em;
     outline: none;
     font-size: 1.125em;
-    background: #b80f22;
+    background: rgb(163, 9, 9);
     box-shadow: 0.325em 0.313em 0.813em #000;
 }
 
 .contenedor-registro input[type="submit"]:hover {
     cursor: pointer;
-    background: #861c1c;
+    background: rgb(128, 8, 8);
+    transition: 0.5s;
 }
 
 .volverAlInicio{
@@ -730,7 +732,7 @@ ul.slider li:target {
 
     width: 20%;
     margin: 2%;
-    border: 5px solid rgb(255, 0, 0);
+    border: 5px solid rgb(128, 8, 8);
     box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.22);
 
     display: flex;
@@ -1052,8 +1054,9 @@ ul.slider li:target {
 
 .botoncito-pagar-carrito input:hover {
     cursor: pointer;
-    background-color: rgb(255, 250, 250);
-    color: rgba(175, 31, 31, 0.699);
+    background-color: rgb(128, 8, 8);
+    color: rgba(255, 255, 255, 0.801);
+    transition: 0.4s;
 }
 
 /**************SECCION PAGAR******************/
@@ -1070,7 +1073,7 @@ ul.slider li:target {
     margin: auto;
     box-sizing: border-box;
     padding: 2rem 3rem;
-    border: 3px solid rgb(204, 27, 27);
+    border: 3px solid rgb(163, 9, 9);
     background-color: rgb(90, 87, 87);
     font-weight: bold;
     box-shadow: 0.5rem 0.75rem 1.25rem black;
@@ -1132,12 +1135,12 @@ ul.slider li:target {
     border-radius: 1.5rem;
     box-shadow: 0.313rem 0.313rem 0.625rem rgb(0, 0, 0);
     font-size: 1.1rem;
-    background-color: #b80f22;;
+    background-color: #b80f22;
     font-weight: bold;
 }
 
 .botoncito-pagar input:hover{
-    background-color: #861c1c;
+    background-color: rgb(128, 8, 8);
     cursor: pointer;
 }
 
@@ -1403,9 +1406,10 @@ footer h3 {
 }
 
 .paginacontactoboton:hover {
-    background-color: white;
-    color: rgb(204, 27, 27);
+    background-color: rgb(128, 8, 8);
+    color: #fff;
     border: black 1px solid;
+    cursor: pointer;
 }
 
 .paginacontacto h3 {
