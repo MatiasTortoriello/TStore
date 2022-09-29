@@ -120,10 +120,6 @@ header button:hover {
     align-items: center;
 }
 
-/*.presentacion-tienda h3{
-
-}*/
-
 /********CAROUSEL********/
 
 .contenedor-carousel {
@@ -264,7 +260,7 @@ ul.slider li:target {
 .mas-vendidos-article .mas-vendidos-div {
     width: 20%;
     margin: 2%;
-    border: 5px solid rgb(114, 8, 8);
+    border: 5px solid rgb(128, 8, 8);
     box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.22);
 
     display: flex;
@@ -411,8 +407,8 @@ ul.slider li:target {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 1rem;
-
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 
 }
 
@@ -422,6 +418,8 @@ ul.slider li:target {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 1rem;
+    
 }
 
 .medios-de-pago-article .medios-de-pago-div p {
@@ -733,7 +731,7 @@ ul.slider li:target {
 
     width: 20%;
     margin: 2%;
-    border: 5px solid rgb(114, 8, 8);
+    border: 5px solid rgb(255, 0, 0);
     box-shadow: 0px 0px 6px 0px rgba(255, 255, 255, 0.22);
 
     display: flex;
@@ -774,23 +772,6 @@ ul.slider li:target {
     border-top: 5px solid #000;
 }
 
-/**************SECCIÓN TEAM******************/
-
-.img-team {
-    width: 600;
-    height: 800;
-}
-
-.img-team {
-    width: 600;
-    height: 800;
-}
-
-#noticia {
-    font-size: x-large;
-    color: rgb(204, 27, 27);
-    display: flex;
-}
 
 /**************SECCIÓN DETALLES DEL PRODUCTO****************/
 
