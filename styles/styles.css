@@ -738,7 +738,7 @@ ul.slider li:target {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    position: relative;
 
     transition: all .4s;
 }
@@ -765,13 +765,22 @@ ul.slider li:target {
     text-align: center;
     text-decoration: none;
 }
+.etiquetapreciocategorias{
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+    background-color: rgb(204, 27, 27);
+    border-radius: 5px 0px 0px 5px;
+    padding: 2px;
+}
 
 .categorias-lista .categorias-div a p {
     color: rgb(209, 209, 209);
     text-align: center;
     text-decoration: none;
-    border-top: 5px solid #000;
+
 }
+
 
 
 /**************SECCIÓN DETALLES DEL PRODUCTO****************/
@@ -1265,12 +1274,20 @@ footer h3 {
 }
 
 .misdirecciones a:hover {
-    color: white;
+    background-color: white;
+    color: rgb(204, 27, 27);
+    border: solid 2px rgb(204, 27, 27);
 
 }
 
 .misdirecciones a {
     text-decoration: none;
+    background-color: rgb(204, 27, 27);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 3px black;
+    border: solid black 2px;
+    color: white;
 }
 
 .misdirecciones h3 {
