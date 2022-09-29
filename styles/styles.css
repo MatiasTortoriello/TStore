@@ -641,7 +641,6 @@ ul.slider li:target {
     position:absolute;
     top: 1rem;
     left: 1rem;
-    border: solid 1px white;
     padding: 10;
     box-shadow: #000000;
     
