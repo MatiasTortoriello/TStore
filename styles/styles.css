@@ -1271,12 +1271,20 @@ footer h3 {
 }
 
 .misdirecciones a:hover {
-    color: white;
+    background-color: white;
+    color: rgb(204, 27, 27);
+    border: solid 2px rgb(204, 27, 27);
 
 }
 
 .misdirecciones a {
     text-decoration: none;
+    background-color: rgb(204, 27, 27);
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 3px black;
+    border: solid black 2px;
+    color: white;
 }
 
 .misdirecciones h3 {
