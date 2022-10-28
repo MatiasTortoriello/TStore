@@ -495,14 +495,6 @@ ul.slider li:target {
     font-size: larger;
 }
 
-
-
-
-
-
-
-
-
 /**********SECCIÓN LOGIN**********/
 
 #logeo {
@@ -1496,10 +1488,8 @@ footer h3 {
 }
 
 .dejanosmensaje {
-
     border: rgb(204, 27, 27) solid 2px;
     border-radius: 5px;
-
 }
 
 .paginacontactoboton {
@@ -1510,8 +1500,6 @@ footer h3 {
     font-size: 1.3em;
     border: 1px black solid;
     border-radius: 5px;
-
-
 }
 
 .paginacontactoboton:hover {
@@ -1695,4 +1683,20 @@ footer h3 {
     background-color: white;
     color: rgb(204, 27, 27);
     cursor: pointer;
+}
+
+/**************************************************************************/
+/*****************************RESPONSIVE**********************************/
+/************************************************************************/
+
+@media screen and (min-width: 320px){ 
+
+}
+
+@media screen and (min-width: 768px){ 
+    
+}
+
+@media screen and (min-width: 320px){ 
+    
 }
