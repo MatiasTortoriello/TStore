@@ -37,7 +37,7 @@ header {
     position: sticky;
     top: 0;
     border-bottom: 1px solid rgba(228, 31, 31, 0.897);
-    ;
+    
 }
 
 .headernav {
@@ -107,6 +107,49 @@ header button:hover {
     background-color: rgba(228, 31, 31, 0.897);
     color: black;
 }
+
+@media screen and (min-width:320px){
+.sectionheader{
+    display: flex;
+    flex-direction: column;
+}
+.buscador{
+    padding-right: 0em;
+}
+.headernav{
+    flex-direction: column;
+}
+.carritoheader{
+    height: 2em;
+    width: 2em;
+    margin-top: 0.1em;
+}
+.headernav a{
+    margin: 0.1em 0em;
+}
+.header{
+    position:static;
+}
+}
+@media screen and (min-width:768px){
+.buscador{
+    padding-right: 6em;
+}
+.carritoheader{
+    height: 2.5em;
+    width: 2.5em;
+    margin-top: 0.1em;
+}
+.headernav a{
+    margin: 0.1em 0em;
+}
+.header{
+    position: static;
+}
+}
+@media screen and (min-width:1280px){
+}
+
 
 /**********SECCIÓN HOME***********/
 
@@ -796,11 +839,13 @@ ul.slider li:target {
 .menucontain {
     width: calc(40% - 10px);
     background-repeat: no-repeat;
+    border-radius: 0.5em;
 }
 
 #portadadarksouls {
-    background-image: url(/assets/ImgJuegos/Accion/Dark_Souls_Portada.jpg);
+    background-image: url(../assets/ImgJuegos/Accion/Dark_Souls_Portada.jpg);
     background-position: center center;
+    background-size: cover;
     position: relative;
     z-index: -1;
     box-shadow: 5px 5px 5px;
@@ -1176,7 +1221,8 @@ footer img {
 }
 
 .columnasfooter {
-    margin: 30px 5px;
+    margin: 30px 0px;
+    padding-right: 10em;
 }
 
 footer p {
@@ -1212,6 +1258,24 @@ footer h3 {
     display: flex;
     align-items: center;
 }
+/*
+#columnaintegrantes{
+    padding-right: 12em;
+}
+*/
+@media screen and (min-width:320px) {
+    .footersection{
+        display: flex;
+        flex-direction: column;
+    } 
+    .columnasfooter{
+        padding: 0em;
+    }
+    .relojfooter{
+        margin: 0px;
+    }   
+}
+
 
 /***************************MI CUENTA**************************/
 .micuenta {
