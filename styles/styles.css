@@ -19,11 +19,7 @@ li {
 
 /**********SECCIÓN HEADER**********/
 
-header {
-    position: sticky;
-    top: 0;
-    z-index: 100000;
-}
+
 
 .sectionheader {
 
@@ -34,10 +30,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
     border-bottom: 1px solid rgba(228, 31, 31, 0.897);
-    
+    ;
 }
 
 .headernav {
@@ -130,6 +124,9 @@ header button:hover {
 .header{
     position:static;
 }
+.sectionheader{
+    position: static;
+}
 }
 @media screen and (min-width:768px){
 .buscador{
@@ -144,10 +141,33 @@ header button:hover {
     margin: 0.1em 0em;
 }
 .header{
+    position:static;
+}
+.sectionheader{
     position: static;
 }
 }
 @media screen and (min-width:1280px){
+    .sectionheader{
+        flex-direction: row;
+    }
+    .headernav{
+        display: flex;
+        flex-direction: row;
+    }
+    .headernav a{
+        margin-right: 0.4em;
+    }
+    .buscador{
+        padding-right: 10em;
+    }
+    .carritoheader{
+        height: 2.0em;
+        width: 2.0em;
+    }
+@media screen and (min-width:1920px){
+
+}
 }
 
 
@@ -1274,6 +1294,14 @@ footer h3 {
     .relojfooter{
         margin: 0px;
     }   
+}
+@media screen and (min-width:1280px){
+    .footersection{
+        flex-direction: row;
+    }
+    .columnasfooter{
+        width: calc(33% - 10px);
+    }
 }
 
 
