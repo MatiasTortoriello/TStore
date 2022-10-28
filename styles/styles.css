@@ -102,51 +102,51 @@ header button:hover {
     color: black;
 }
 
-@media screen and (min-width:320px){
-.sectionheader{
-    display: flex;
-    flex-direction: column;
-}
-.buscador{
-    padding-right: 0em;
-}
-.headernav{
-    flex-direction: column;
-}
-.carritoheader{
-    height: 2em;
-    width: 2em;
-    margin-top: 0.1em;
-}
-.headernav a{
-    margin: 0.1em 0em;
-}
-.header{
-    position:static;
-}
-.sectionheader{
-    position: static;
-}
-}
-@media screen and (min-width:768px){
-.buscador{
-    padding-right: 6em;
-}
-.carritoheader{
-    height: 2.5em;
-    width: 2.5em;
-    margin-top: 0.1em;
-}
-.headernav a{
-    margin: 0.1em 0em;
-}
-.header{
-    position:static;
-}
-.sectionheader{
-    position: static;
-}
-}
+@media screen and (max-width:768px) and (min-width:320px){
+    .sectionheader{
+        display: flex;
+        flex-direction: column;
+    }
+    .buscador{
+        padding-right: 0em;
+    }
+    .headernav{
+        flex-direction: column;
+    }
+    .carritoheader{
+        height: 2em;
+        width: 2em;
+        margin-top: 0.1em;
+    }
+    .headernav a{
+        margin: 0.1em 0em;
+    }
+    .header{
+        position:static;
+    }
+    .sectionheader{
+        position: static;
+    }
+    }
+    @media screen and (min-width:768px){
+    .buscador{
+        padding-right: 6em;
+    }
+    .carritoheader{
+        height: 2.5em;
+        width: 2.5em;
+        margin-top: 0.1em;
+    }
+    .headernav a{
+        margin: 0.1em 0em;
+    }
+    .header{
+        position:static;
+    }
+    .sectionheader{
+        position: static;
+    }
+    }
 @media screen and (min-width:1280px){
     .sectionheader{
         flex-direction: row;
@@ -165,9 +165,7 @@ header button:hover {
         height: 2.0em;
         width: 2.0em;
     }
-@media screen and (min-width:1920px){
 
-}
 }
 
 
@@ -1266,16 +1264,12 @@ footer h3 {
 
 }
 
-#footerhorario {
-    display: flex;
-    align-items: center;
-}
 /*
 #columnaintegrantes{
     padding-right: 12em;
 }
 */
-@media screen and (min-width:320px) {
+@media screen and (max-width:1280px) and (min-width:320px) {
     .footersection{
         display: flex;
         flex-direction: column;
@@ -1287,15 +1281,18 @@ footer h3 {
         margin: 0px;
     }   
 }
-@media screen and (min-width:1280px){
+@media screen and (max-width:1600px) and (min-width:1280px ){
     .footersection{
         flex-direction: row;
     }
     .columnasfooter{
         width: calc(33% - 10px);
+        padding-right: 0em;
+    }
+    #footerhorario{
+        align-items: center;
     }
 }
-
 
 /***************************MI CUENTA**************************/
 .micuenta {
@@ -1688,15 +1685,3 @@ footer h3 {
 /**************************************************************************/
 /*****************************RESPONSIVE**********************************/
 /************************************************************************/
-
-@media screen and (min-width: 320px){ 
-
-}
-
-@media screen and (min-width: 768px){ 
-    
-}
-
-@media screen and (min-width: 320px){ 
-    
-}
