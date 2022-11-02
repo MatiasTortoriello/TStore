@@ -4,8 +4,6 @@ let regexEmail=/^[0-9a-zA-Z._.-]+\@[0-9a-zA-Z._.-]+\.[a-zA-Z]+$/;
 
 let usuariosRegistrados=[]
 
-
-
 registro.addEventListener('click', (e) =>{
 
     e.preventDefault()
@@ -40,11 +38,11 @@ function validar(){
         alert('La contraseña debe tener más de 5 caracteres')
     }
 
-    /*if(!passwordRegistro.matches(/^[A-Z]$/)){
+    if(!passwordRegistro.test(/^[A-Z]$/)){
         error=true
         console.log(error)
         alert('La contraseña debe tener una letra mayúscula')
-    }*/
+    }
 
     /*if(!passwordRegistro.matches(/\d/)){
         error=true
@@ -67,7 +65,6 @@ function validar(){
     if(!regexEmail.test(emailRegistro)){
         error = true
         console.log(error)
-        mensajeError+="<p>El email es incorrecto</p>"
         alert('El email es incorrecto')
     }
 
