@@ -270,6 +270,11 @@ ul.slider li:target {
     text-align: center;
     margin-top: 1.7rem;
 }
+@media screen and (max-width:768px) and (min-width:320px){
+    .presentacion-tienda{
+        text-align: center;
+    }
+}
 
 .mas-vendidos-section h3 {
     font-size: 2.0rem;
