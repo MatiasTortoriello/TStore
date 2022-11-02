@@ -1,0 +1,1 @@
+let registro = document.getElementById
