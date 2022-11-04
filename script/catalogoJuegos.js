@@ -73,7 +73,7 @@ let listaJuegos = [
     },
     
     {
-        id: 08,
+        id: 09,
         nombre: "Dark Souls",
         genero: "Rpg",
         plataformas: ["PC", "Playstation", "Xbox"],
@@ -82,7 +82,7 @@ let listaJuegos = [
     },
 
     {
-        id: 08,
+        id: 10,
         nombre: "Dark Souls",
         genero: "Rpg",
         plataformas: ["PC", "Playstation", "Xbox"],
