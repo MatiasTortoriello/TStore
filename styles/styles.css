@@ -247,6 +247,10 @@ ul.slider li:target {
     border-radius: 100%;
     border: solid 2px black
 }
+.slider img{
+    width: 100%;
+    height: 70vh;
+}
 
 /******PRESENTACIÓN******/
 
