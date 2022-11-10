@@ -1,4 +1,4 @@
-let listaDeUsariosRegistrados=JSON.parse(localStorage.getItem("usuariosRegistrados"));
+let listaDeUsariosRegistrados=JSON.parse(localStorage.getItem("Usuarios"));
 
 let nombre = document.getElementById('nombreUsuarioLogin')
 let password = document.getElementById('passwordUsuarioLogin')
@@ -9,8 +9,8 @@ loguearse.addEventListener('submit', (e) => {
 
     listaDeUsariosRegistrados.forEach(usuario => {
         if(usuario.nombre == nombre.value && usuario.password == password.value){
-            form.subbmit();
             alert('Ingreso correcto. Bienvenido!')
+           loguearse.submit();
         } else {
             alert('Usuario o Constraseña inválidos')
         }  
