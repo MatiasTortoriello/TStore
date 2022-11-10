@@ -18,50 +18,53 @@ registro.addEventListener('submit', (e) =>{
     if(nombreRegistro.value.length<5){
         error = true;
         mensajeError+="<p>El nombre tiene que tener un mínimo de 5 caracteres</p>"
-        alert('El nombre tiene que tener un mínimo de 5 caracteres')
+        //alert('El nombre tiene que tener un mínimo de 5 caracteres')
     }
 
     if(passwordRegistro.length<=7){
         error=true
         console.log(error)
-        alert('La contraseña debe tener al menos 8 caracteres')
+        //alert('La contraseña debe tener al menos 8 caracteres')
     }
 
-    if(!regexPasswordInvalid.test(passwordRegistro)){
+    if(!regexPasswordInvalid.test(passwordRegistro.value)){
         error=true
-        console.log(error)
-        alert('La contraseña debe comenzar con mayúscula y tener al menos un número')
+        mensajeError+='La contraseña debe comenzar con mayúscula y tener al menos un número';
+        //alert('La contraseña debe comenzar con mayúscula y tener al menos un número')
     } 
 
     if(passwordRepetida.textContent !== passwordRegistro.textContent){
         error = true
         console.log(error)
-        alert('Las contraseñas no coinciden')
+        //alert('Las contraseñas no coinciden')
     }
 
-    if(!regexEmail.test(emailRegistro)){
+    if(!regexEmail.test(emailRegistro.value)){
         error = true
         console.log(error)
-        alert('El email es incorrecto')
+        //alert('El email es incorrecto')
     }
 
     if(error){
-        alert('No se mandó nada')
+        //alert('No se mandó nada')
+        console.log(mensajeError)
     }else{
+        registrarCuenta(); //primero guardar los datos porque cuando la pagina se refresca se van
         form.submit();
-        regsitrarCuenta();
+        
     }
 })
 
-function regsitrarCuenta(){
+function registrarCuenta(){
     
     let usuarioNuevo = {
-        "nombre": nombreRegistro,
-        "password": passwordRegistro,
-        "email": emailRegistro
+        "nombre": nombreRegistro.value,
+        "password": passwordRegistro.value,
+        "email": emailRegistro.value
     }
 
     usuariosRegistrados.push(usuarioNuevo);
+    console.log(usuariosRegistrados);
 
     usuarioLocalStorage();
 }

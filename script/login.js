@@ -10,4 +10,3 @@ listaDeUsariosRegistrados.forEach(usuario => {
         alert('Usuario o Constraseña inválidos')
     }  
 });
-
