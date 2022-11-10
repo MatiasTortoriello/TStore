@@ -26,7 +26,7 @@ registro.addEventListener('submit', (e) =>{
         console.log(error)
         alert('La contraseña debe tener al menos 8 caracteres')
     }
-
+/*
     if(!regexPasswordInvalid.test(passwordRegistro.value)){
         error=true
         mensajeError+='La contraseña debe comenzar con mayúscula y tener al menos un número';
@@ -36,8 +36,8 @@ registro.addEventListener('submit', (e) =>{
     if(passwordRepetida.textContent !== passwordRegistro.textContent){
         error = true
         console.log(error)
-        alert('Las contraseñas no coinciden')
-    }
+        alert('Las contraseñas no coinciden') 
+    } */
 
     if(!regexEmail.test(emailRegistro.value)){
         error = true
