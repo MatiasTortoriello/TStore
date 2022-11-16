@@ -958,11 +958,10 @@ ul.slider li:target {
     width: 55px;
     padding-left: 25px;
 }
-
-.productobotoncarrito a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
+#agregarcarrito{
+    background-color: rgba(228, 31, 31, 0.897);
+    border-radius: 10px;
+    margin-left: 5px;
 }
 
 .productosimilares h2 {
@@ -971,6 +970,7 @@ ul.slider li:target {
     margin: 4.0em 0.0em;
     color: rgba(228, 31, 31, 0.897);
 }
+
 
 .masproductos {
     display: flex;
@@ -1049,6 +1049,7 @@ ul.slider li:target {
 margin-left: 5em;
 margin-right: 5em;
 }
+
 /**************SECCIÓN CARRITO****************/
 
 
@@ -1374,21 +1375,10 @@ footer h3 {
     border-radius: 4px;
 }
 
-.misdirecciones a:hover {
-    background-color: white;
-    color: rgb(204, 27, 27);
-    border: solid 2px rgb(204, 27, 27);
-
-}
-
-.misdirecciones a {
-    text-decoration: none;
-    background-color: rgb(204, 27, 27);
-    border-radius: 5px;
-    padding: 5px;
-    box-shadow: 2px 2px 3px black;
-    border: solid black 2px;
-    color: white;
+.misdirecciones button:hover{
+    background-color: rgb(163, 9, 9);
+    
+    cursor: pointer;
 }
 
 .misdirecciones h3 {
@@ -1641,13 +1631,6 @@ footer h3 {
 
 
 /**********************AGREGAR METODO*********************/
-.metodosection{
-    display: flex;
-    height: 100vh;
-    background-image: url(/assets/BackGrounds/background-login.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 .metodosection div{
     margin: auto;
     width: 26rem;
@@ -1701,6 +1684,15 @@ footer h3 {
     color: rgb(204, 27, 27);
     cursor: pointer;
 }
+#modal-pagos{
+    margin: auto;
+}
+#modal-direcciones::backdrop{
+ background-color: rgba(0,0,0,.60);
+}
+#modal-pagos::backdrop{
+    background-color: rgba(0,0,0,.60);
+   }
 
 /**************************************************************************/
 /*****************************RESPONSIVE**********************************/

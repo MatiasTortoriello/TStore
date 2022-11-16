@@ -48,30 +48,59 @@
     <section class="misdirecciones">
            <h3>Mis Direcciones</h3>
             
-            <a href="/pages/agregardireccion.html" target="_blank">Agregar</a>
+           <button id="agregar-direccion">Agregar</button> 
                 
     </section>
 
     <section class="direcciones">
-        <div class="direccionesdiv">
+        <div class="direccionesdiv" id="direccionesalias">
             <p id="alias">Alias</p>
-            <p>Mi depto</p>
-            <p>Casa mamá</p>
-            <p>Trabajo</p>
-            <p>Universidad</p>
+            
         </div>
-        <div class="direccionesdiv">
+        <div class="direccionesdiv" id="direcciones">
             <p id="alias">Dirección</p>
-           <p>XXXXXXXXXXXXXXX <a href="#"> <img src="/assets/svg/trash-solid.svg" alt=""> </p> </a>
-           <p>XXXXXXXXXXXXXXX <a href="#"> <img src="/assets/svg/trash-solid.svg" alt=""> </p> </a>
-           <p>XXXXXXXXXXXXXXX <a href="#"> <img src="/assets/svg/trash-solid.svg" alt=""> </p> </a>
-           <p>XXXXXXXXXXXXXXX <a href="#"> <img src="/assets/svg/trash-solid.svg" alt=""> </p> </a>
+           
         </div>
     </section>
 
-    <section class="misdirecciones">
+        <dialog id="modal-direcciones" class="agregardirecciondiv">
+            <h3>Agregar Direccion</h3>
+            <form method="dialog" action="/pages/miCuenta.html">
+                
+                <p>Alias</p>
+                <input type="text" placeholder="Alias" id="agregaralias">
+                <p>Provincia</p>
+                <select name="provincias" id="">
+                    <option value="1">Buenos Aires</option>
+                    <option value="2">La Pampa</option>
+                    <option value="3">Cordoba</option>
+                    <option value="4">Santa Fe</option>
+                    <option value="5">Neuquen</option>
+                </select>
+                <p>Localidad</p>
+                <select name="localidades" id="">
+                    <option value="1">San Justo</option>
+                    <option value="2">Moron</option>
+                    <option value="3">Ituzaingo</option>
+                    <option value="4">Ramos Mejía</option>
+                    <option value="5">La Ferrere</option>
+                </select>
+                <p>Direccion</p>
+                <input type="text" placeholder="Direccion" id="agregardireccion">
+                <p>Teléfono</p>
+                <input type="number" placeholder="Teléfono">
+                <article>
+                    <p>Piso <input type="number" id="dpto" ></p>
+                    <p>Dpto <input type="number" name="" id="dpto"></p>
+                </article>
+                <input type="submit" id="agregardireccionboton" value="Guardar">
+            </form>
+
+        </dialog>
+        
+        <section class="misdirecciones">
         <h3>Mis métodos de pago</h3>
-        <a href="/pages/agregarmetodo.html" target="_blank">Agregar</a>   
+        <button id="agregar-pago">Agregar</button> 
    </section>
 
    <section class="metodospago">
@@ -83,6 +112,26 @@
         <p>Prex <a href="#"><img src="/assets/svg/trash-solid.svg" alt=""></a></p>
     </div>
    </section>
+   
+   <dialog id="modal-pagos" class="metodosection">
+    <div id="div-modal-pagos">
+        <form method="dialog" action="/pages/miCuenta.html">
+
+            <h3>Nueva Tarjeta</h3><img src="/assets/svg/credit-card-regular.svg" alt="">
+            <p>Alias</p>
+            <input type="text" name="" id="">
+            <p>Numero tarjeta</p>
+            <input type="number">
+            <article>
+                <p>Codigo <input type="number" id="ccv"></p>
+                <p>Vencimiento <input type="date" id="ccv"></p>
+            </article>
+            <p>Nombre Titular</p>
+            <input type="text">
+            <input type="submit" id="metodosboton" value="Guardar">
+        </form>
+    </div>
+</dialog>
 
 
     </main>
@@ -106,5 +155,6 @@
         </section>
 
     </footer>
+    <script src="../script/direccionesypagos.js"></script>
 </body>
 </html>

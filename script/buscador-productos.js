@@ -98,7 +98,7 @@ listaJuegos.forEach((item)=>{
         <img src=${item.imagen}>
         <p>${item.nombre}</p>
     </a>
-    <p class="etiquetapreciocategorias">${item.precio}.- <i class="fa-solid fa-cart-shopping"></i> </p> 
+    <button><p class="etiquetapreciocategorias">${item.precio}.- <i class="fa-solid fa-cart-shopping"></i> </p> </button>
 </div>`;
 });
 
@@ -113,7 +113,7 @@ buscador.addEventListener("keyup",()=>{
             <img src=${item.imagen}>
             <p>${item.nombre}</p>
         </a>
-        <p class="etiquetapreciocategorias">${item.precio}.- <i class="fa-solid fa-cart-shopping"></i> </p> 
+        <button><p class="etiquetapreciocategorias">${item.precio}.- <i class="fa-solid fa-cart-shopping"></i> </p> </button>
     </div>`;
     })
 })
