@@ -251,6 +251,12 @@ ul.slider li:target {
     width: 100%;
     height: 70vh;
 }
+.mediospago img{
+    max-height: 15em;
+    max-width: 20em;
+    padding-right: 6em;
+    padding-left: 6em;
+}
 
 /******PRESENTACIÓN******/
 
