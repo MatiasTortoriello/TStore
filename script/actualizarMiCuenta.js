@@ -26,7 +26,6 @@ const actualizarMetodos = () =>{
         div.innerHTML= `<p>${met.alias}</p><button onclick="eliminarMetodo" class="button-tachito"><i class="fas fa-trash"></i></button>`
         metodos.appendChild(div)
     })
-    
 }
 actualizarMetodos();
 
