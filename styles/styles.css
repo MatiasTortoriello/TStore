@@ -849,6 +849,9 @@ ul.slider li:target {
     text-decoration: none;
 
 }
+.button-categoria-producto{
+    border-style: none;
+}
 
 
 

@@ -113,7 +113,7 @@ buscador.addEventListener("keyup",()=>{
             <img src=${item.imagen}>
             <p>${item.nombre}</p>
         </a>
-        <button><p class="etiquetapreciocategorias">${item.precio}.- <i class="fa-solid fa-cart-shopping"></i> </p> </button>
+        <button class="button-categoria-producto"><p class="etiquetapreciocategorias">${item.precio}.- <i class="fa-solid fa-cart-shopping"></i> </p> </button>
     </div>`;
     })
 })
