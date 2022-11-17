@@ -12,6 +12,7 @@ let listaJuegos = [
     {
         id: 01,
         nombre: "dark souls",
+        cantidad: 1,
         genero: "Rpg",
         plataformas: ["PC", "Playstation", "Xbox"],
         precio: 7000,
@@ -22,70 +23,77 @@ let listaJuegos = [
     {
         id: 02,
         nombre: "devil may cry dmc",
+        cantidad: 1,
         genero: "accion",
         plataformas: ["PC", "Playstation", "Xbox"],
         precio: 3000,
-        descripcion: "Un juego re jodido. Compralo si tenes huevos.",
+        descripcion: "Un juego para otakus.",
         imagen: devilmaycrydmcimg
     },
 
     {
         id: 03,
         nombre: "devil may cry 5",
+        cantidad: 1,
         genero: "accion",
         plataformas: ["PC", "Playstation", "Xbox"],
         precio: 2000,
-        descripcion: "Un juego re jodido. Compralo si tenes huevos.",
+        descripcion: "Otro juego para otakus.",
         imagen: devilmaycry5img
     },
 
     {
         id: 04,
         nombre: "god of war",
+        cantidad: 1,
         genero: "aventura",
         plataformas: ["PC", "Playstation", "Xbox"],
         precio: 5000,
-        descripcion: "Un juego re jodido. Compralo si tenes huevos.",
+        descripcion: "El juego que nunca salió en PC.",
         imagen: godofwarimg
     },
 
     {
         id: 05,
         nombre: "need for speed",
+        cantidad: 1,
         genero: "carreras",
         plataformas: ["PC", "Playstation", "Xbox"],
         precio: 3500,
-        descripcion: "Un juego re jodido. Compralo si tenes huevos.",
+        descripcion: "Un juego de autitos. Los primeros 5 estaban re bien.",
         imagen: needforspeedimg
     },
 
     {
         id: 06,
         nombre: "nfs heat",
+        cantidad: 1,
         genero: "carreras",
         plataformas: ["PC", "Playstation", "Xbox"],
         precio: 6000,
-        descripcion: "Un juego re jodido. Compralo si tenes huevos.",
+        descripcion: "Un copy paste de los otros NFS, compralo sólo para gastar guita.",
         imagen: nfsheatimg
     },
 
     {
         id: 07,
         nombre: "call of duty: modern warfare",
+        cantidad: 1,
         genero: "terror",
         plataformas: ["PC", "Playstation", "Xbox"],
         precio: 7000,
-        descripcion: "Un juego re jodido. Compralo si tenes huevos.",
+        descripcion: "Le disparás a árabes y chinos por igual. Re divertido y racista.",
         imagen: codimg
     },
 
     {
         id: 08,
         nombre: "age of empires 3",
+        cantidad: 1,
         genero: "rts",
         plataformas: ["PC", "Playstation", "Xbox"],
         precio: 10000,
-        descripcion: "Un juego re jodido. Compralo si tenes huevos.",
+        descripcion: "Darwin.",
         imagen: ageofempiresimg
     }
 ]
@@ -93,14 +101,29 @@ let listaJuegos = [
 const categoriasDiv = document.querySelector(".categorias-lista");
 
 listaJuegos.forEach((item)=>{
-    categoriasDiv.innerHTML+=`<div class="categorias-div">
-    <a href="/pages/producto.html">
-        <img src=${item.imagen}>
-        <p>${item.nombre}</p>
-    </a>
-    <button><p class="etiquetapreciocategorias">${item.precio}.- <i class="fa-solid fa-cart-shopping"></i> </p> </button>
-</div>`;
+    categoriasDiv.innerHTML+=
+    `<div class="categorias-div">
+        <a href="/pages/producto.html">
+            <img src=${item.imagen}>
+            <p>${item.nombre}</p>
+        </a>
+        <p class="etiquetapreciocategorias">${item.precio}.- 
+            <button id="agregar${item.id}"> 
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </p>
+    </div>`;
+    
+
 });
+
+function productoLocalStorage(){
+    localStorage.setItem("Juegos")
+
+    localStorage.setItem("Juegos",JSON.stringify(listaJuegos))
+}
+
+
 
 const buscador = document.querySelector(".buscador")
 buscador.addEventListener("keyup",()=>{
@@ -113,7 +136,12 @@ buscador.addEventListener("keyup",()=>{
             <img src=${item.imagen}>
             <p>${item.nombre}</p>
         </a>
-        <button class="button-categoria-producto"><p class="etiquetapreciocategorias">${item.precio}.- <i class="fa-solid fa-cart-shopping"></i> </p> </button>
+        <button class="button-categoria-producto"><p class="etiquetapreciocategorias">
+        ${item.precio}.- <i class="fa-solid fa-cart-shopping"></i> </p> </button>
     </div>`;
     })
 })
+
+function comprarJuego(){
+
+}

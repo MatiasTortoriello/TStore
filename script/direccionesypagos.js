@@ -9,6 +9,8 @@ const registrarDireccion= document.querySelector("#formdirecciones")
 const botonAgregarMetodo= document.querySelector("#formmetodos")
 let listaDeDireccionesRegistradas=JSON.parse(localStorage.getItem("Direcciones"));
 
+let regexNumeroDeTarjetaValido=/^([1-9]{10})$/;
+
 
 abrirDirecciones.addEventListener("click", () =>{
     modalDireccion.showModal();
@@ -46,13 +48,19 @@ function registrarDirecciones(){
 }
 
 let metodosRegistrados=[];
+
 function registrarMetodos(){
     
     let metodoNuevo = {
-        "alias": agregarMetodo.value
+        "alias": agregarMetodo.value,
+        "numeroDeTarjeta": agregarMetodo.value
     }
 
-    metodosRegistrados.push(metodoNuevo);
+
+    if(regexNumeroDeTarjetaValido.test(numeroDeTarjeta)){
+        metodosRegistrados.push(metodoNuevo);    
+    }
+    
     console.log(metodosRegistrados);
 
     metodosLocalStorage();
