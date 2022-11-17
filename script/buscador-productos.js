@@ -100,6 +100,11 @@ let listaJuegos = [
 
 const categoriasDiv = document.querySelector(".categorias-lista");
 
+
+listaJuegos.forEach((item)=>{
+
+})
+
 listaJuegos.forEach((item)=>{
     categoriasDiv.innerHTML+=
     `<div class="categorias-div">
@@ -113,14 +118,21 @@ listaJuegos.forEach((item)=>{
             </button>
         </p>
     </div>`;
-    
+    var boton = document.getElementById(`agregar${item.id}`)
+    boton.addEventListener('click', () => {
+        
+            agregarAlCarrito(item.id)
+            console.log(listaJuegosComprados)
+        
+    })
+
 
 });
 
-function productoLocalStorage(){
-    localStorage.setItem("Juegos")
+function productoLocalStorage(listaJuegosComprados){
+    localStorage.setItem("Juegos", "Juego")
 
-    localStorage.setItem("Juegos",JSON.stringify(listaJuegos))
+    localStorage.setItem("Juegos",JSON.stringify(listaJuegosComprados))
 }
 
 
@@ -136,12 +148,57 @@ buscador.addEventListener("keyup",()=>{
             <img src=${item.imagen}>
             <p>${item.nombre}</p>
         </a>
-        <button class="button-categoria-producto"><p class="etiquetapreciocategorias">
-        ${item.precio}.- <i class="fa-solid fa-cart-shopping"></i> </p> </button>
+        <p class="etiquetapreciocategorias">${item.precio}.- 
+            <button id="agregar${item.id}"> 
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </p>
     </div>`;
+
+        
+    var boton = document.getElementById(`agregar${item.id}`)
+    boton.addEventListener('click', () => {
+        
+            agregarAlCarrito(item.id)
+            console.log(listaJuegosComprados)
+        
+    })
+        
+
     })
 })
+
+listaJuegos.forEach((item)=>{
+    item.addEventListener
+})
+
 
 function comprarJuego(){
 
 }
+
+let listaJuegosComprados = [];
+
+const contenedorCarrito = document.getElementById("tabla-carrito")
+
+
+
+
+const agregarAlCarrito = (prodId) => {
+    
+    const existe = listaJuegosComprados.some (prod => prod.id === prodId)
+
+    if (existe){
+        const prod = listaJuegosComprados.map (prod => { 
+            if (prod.id === prodId){
+                prod.cantidad++
+            }
+        })
+    } else { 
+        const item = listaJuegos.find((prod) => prod.id === prodId)
+        listaJuegosComprados.push(item)
+    }
+    productoLocalStorage(listaJuegosComprados);
+}
+
+
