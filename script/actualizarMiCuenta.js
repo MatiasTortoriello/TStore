@@ -7,12 +7,13 @@ const metodos= document.querySelector(".mismetodosdiv")
 console.log(listaDeDirecciones)
 const actualizarDirecciones = () =>{
     listaDeDirecciones.forEach((direccion) =>{
-        const p= document.createElement('p')
-        p.innerHTML= `<p>${direccion.alias}</p>`
-        const p2=document.createElement('p')
-        p2.innerHTML= `<p>${direccion.direccion}</p>`
-        direccionesAlias.appendChild(p)
-        direcciones.appendChild(p2)
+        const d= document.createElement('div')
+        d.innerHTML= `<p>${direccion.alias}</p>`
+        const d2=document.createElement('div')
+        d2.classList.add('div-metodos')
+        d2.innerHTML= `<p>${direccion.direccion}</p><button class="button-tachito"><i class="fas fa-trash"></i></button>`
+        direccionesAlias.appendChild(d)
+        direcciones.appendChild(d2)
     })
 }
 actualizarDirecciones();
@@ -20,9 +21,16 @@ actualizarDirecciones();
 console.log(listaDeMetodos)
 const actualizarMetodos = () =>{
     listaDeMetodos.forEach((met) =>{
-        const p3= document.createElement('p')
-        p3.innerHTML= `<p>${met.alias}</p>`
-        metodos.appendChild(p3)
+        const div= document.createElement('div')
+        div.classList.add('div-metodos')
+        div.innerHTML= `<p>${met.alias}</p><button class="button-tachito"><i class="fas fa-trash"></i></button>`
+        metodos.appendChild(div)
     })
 }
 actualizarMetodos();
+
+
+
+/*
+<p>XXXXXXXXXXXXXXX <a href=""><img src="/assets/svg/trash-solid.svg" alt=""> </p></a>
+*/
