@@ -53,14 +53,14 @@ function registrarMetodos(){
     
     let metodoNuevo = {
         "alias": agregarMetodo.value,
-        "numeroDeTarjeta": agregarMetodo.value
+
     }
 
-
+    /*
     if(regexNumeroDeTarjetaValido.test(numeroDeTarjeta)){
-        metodosRegistrados.push(metodoNuevo);    
     }
-    
+    */  
+    metodosRegistrados.push(metodoNuevo);    
     console.log(metodosRegistrados);
 
     metodosLocalStorage();

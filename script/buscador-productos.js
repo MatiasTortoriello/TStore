@@ -7,6 +7,9 @@ var nfsheatimg ="../assets/ImgJuegos/Carreras/nfsheat.webp"
 var codimg ="../assets/ImgJuegos/Shooters/CODMW2.jpg"
 var ageofempiresimg ="../assets/ImgJuegos/Strategy/Age-of-Empires.jpg"
 
+let listaDeJuegosGuardados=JSON.parse(localStorage.getItem("Juegos"));
+
+
 let listaJuegos = [
     
     {
@@ -129,13 +132,13 @@ listaJuegos.forEach((item)=>{
 
 });
 
+/*
 function productoLocalStorage(listaJuegosComprados){
     localStorage.setItem("Juegos", "Juego")
-
+    
     localStorage.setItem("Juegos",JSON.stringify(listaJuegosComprados))
 }
-
-
+*/
 
 const buscador = document.querySelector(".buscador")
 buscador.addEventListener("keyup",()=>{
@@ -198,7 +201,7 @@ const agregarAlCarrito = (prodId) => {
         const item = listaJuegos.find((prod) => prod.id === prodId)
         listaJuegosComprados.push(item)
     }
-    productoLocalStorage(listaJuegosComprados);
+    /* productoLocalStorage(listaJuegosComprados); */
 }
 
 
