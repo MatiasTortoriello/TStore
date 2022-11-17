@@ -15,6 +15,9 @@ let regexNumeroDeTarjetaValido=/^([1-9]{10})$/;
 abrirDirecciones.addEventListener("click", () =>{
     modalDireccion.showModal();
 })
+abrirPagos.addEventListener("click", () =>{
+    modalPagos.showModal();
+})
 registrarDireccion.addEventListener("submit", (e)=>{
     e.preventDefault();
     registrarDirecciones();
@@ -29,9 +32,6 @@ botonAgregarMetodo.addEventListener("submit", (e)=>{
 
     
 
-abrirPagos.addEventListener("click", () =>{
-    modalPagos.showModal();
-})
 
 let direccionesRegistradas=[];
 function registrarDirecciones(){
@@ -75,4 +75,5 @@ function direccionesLocalStorage(){
 function metodosLocalStorage(){
     localStorage.setItem("Metodos", "Metodo")
     localStorage.setItem("Metodos",JSON.stringify(metodosRegistrados))
+
 }

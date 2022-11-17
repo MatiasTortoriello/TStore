@@ -23,14 +23,10 @@ const actualizarMetodos = () =>{
     listaDeMetodos.forEach((met) =>{
         const div= document.createElement('div')
         div.classList.add('div-metodos')
-        div.innerHTML= `<p>${met.alias}</p><button class="button-tachito"><i class="fas fa-trash"></i></button>`
+        div.innerHTML= `<p>${met.alias}</p><button onclick="eliminarMetodo" class="button-tachito"><i class="fas fa-trash"></i></button>`
         metodos.appendChild(div)
     })
 }
 actualizarMetodos();
 
 
-
-/*
-<p>XXXXXXXXXXXXXXX <a href=""><img src="/assets/svg/trash-solid.svg" alt=""> </p></a>
-*/
