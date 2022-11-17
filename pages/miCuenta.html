@@ -65,7 +65,7 @@
 
         <dialog id="modal-direcciones" class="agregardirecciondiv">
             <h3>Agregar Direccion</h3>
-            <form method="dialog" action="/pages/miCuenta.html">
+            <form method="dialog" action="" id="formdirecciones">
                 
                 <p>Alias</p>
                 <input type="text" placeholder="Alias" id="agregaralias">
@@ -106,20 +106,16 @@
    <section class="metodospago">
     <div class="mismetodosdiv">
         <p id="pagoalias">Alias</p>
-        <p>Credito Visa <a href="#"><img src="/assets/svg/trash-solid.svg" alt=""></a></p>
-        <p>Debito Mastercard <a href="#"><img src="/assets/svg/trash-solid.svg" alt=""></a></p>
-        <p>Lemon Cash <a href="#"><img src="/assets/svg/trash-solid.svg" alt=""></a></p>
-        <p>Prex <a href="#"><img src="/assets/svg/trash-solid.svg" alt=""></a></p>
     </div>
    </section>
    
    <dialog id="modal-pagos" class="metodosection">
     <div id="div-modal-pagos">
-        <form method="dialog" action="/pages/miCuenta.html">
+        <form method="dialog" action="" id="formmetodos">
 
             <h3>Nueva Tarjeta</h3><img src="/assets/svg/credit-card-regular.svg" alt="">
             <p>Alias</p>
-            <input type="text" name="" id="">
+            <input type="text" name="" id="agregarAliasMetodo">
             <p>Numero tarjeta</p>
             <input type="number">
             <article>
@@ -156,5 +152,6 @@
 
     </footer>
     <script src="../script/direccionesypagos.js"></script>
+    <script src="../script/actualizarMiCuenta.js"></script>
 </body>
 </html>
