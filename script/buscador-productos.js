@@ -175,9 +175,6 @@ buscador.addEventListener("keyup",()=>{
 
 let listaJuegosComprados = [];
 
-const contenedorCarrito = document.getElementById("tabla-carrito")
-
-
 
 
 const agregarAlCarrito = (prodId) => {
