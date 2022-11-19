@@ -7,7 +7,11 @@ let passwordRegistro = document.getElementById('passwordUsuarioRegistro')
 let passwordRepetida = document.getElementById('passwordUsuarioRegistroDos')
 let emailRegistro = document.getElementById('emailUsuarioRegistro')
 
-let usuariosRegistrados=[]
+let usuariosRegistrados=[];
+// localStorage.clear();
+if(localStorage.getItem("Usuarios")!=undefined){
+    usuariosRegistrados=JSON.parse(localStorage.getItem("Usuarios"));
+    console.log("cargo-taba lleno")}
 
 registro.addEventListener('submit', (e) =>{
 
@@ -44,6 +48,11 @@ registro.addEventListener('submit', (e) =>{
         console.log(error)
         alert('El email es incorrecto')
     }
+    if(existeEnUsuariosRegistrados(nombreRegistro.value)){
+        error = true
+        console.log(error)
+        alert('el usuario ya existe')
+    }
 
     if(error){
         alert('No se mandó nada')
@@ -58,9 +67,9 @@ registro.addEventListener('submit', (e) =>{
 function registrarCuenta(){
     
     let usuarioNuevo = {
-        "nombre": nombreRegistro.value,
-        "password": passwordRegistro.value,
-        "email": emailRegistro.value
+        nombre: nombreRegistro.value,
+        password: passwordRegistro.value,
+        email: emailRegistro.value
     }
 
     usuariosRegistrados.push(usuarioNuevo);
@@ -70,7 +79,11 @@ function registrarCuenta(){
 }
 
 function usuarioLocalStorage(){
-    localStorage.setItem("Usuarios", "Cuentas")
+    // localStorage.setItem("Usuarios", "Cuentas");
 
     localStorage.setItem("Usuarios",JSON.stringify(usuariosRegistrados))
+}
+function existeEnUsuariosRegistrados(usuario){
+    for (let i = 0; i < usuariosRegistrados.length; i++)if(usuariosRegistrados[i].nombre==usuario)return true;
+    return false;
 }

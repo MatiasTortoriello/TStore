@@ -53,7 +53,7 @@ const categoriasDiv = document.querySelector(".categorias-lista");
 
 categorias.forEach((item)=>{
     categoriasDiv.innerHTML+=`<div class="categorias-div">
-    <a href="/pages/categorias-productos.html">
+    <a href="../pages/categorias-productos.html">
         <img src=${item.imagen}>
         <p>${item.categoria}</p>
     </a>

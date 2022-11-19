@@ -110,7 +110,7 @@ listaJuegos.forEach((item)=>{
 listaJuegos.forEach((item)=>{
     categoriasDiv.innerHTML+=
     `<div class="categorias-div">
-        <a href="/pages/producto.html">
+        <a href="../pages/producto.html">
             <img src=${item.imagen}>
             <p>${item.nombre}</p>
         </a>

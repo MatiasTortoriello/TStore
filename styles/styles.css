@@ -539,7 +539,11 @@ ul.slider li:target {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     height: 100vh;
-    background-image: url(/assets/BackGrounds/background-login.jpg);
+   /* background-image: url(../assets/BackGrounds/background-login.jpg);*/
+    /*background-color: #000;
+    border: 2px solid rgb(163, 9, 9);*/
+    background: rgb(180,15,15);
+background: radial-gradient(circle, rgba(180,15,15,1) 0%, rgba(0,0,0,1) 100%);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -728,8 +732,6 @@ ul.slider li:target {
 .volverAlInicio a p{
     color: white;
 }
-
-
 
 /**************SECCIÓN BOTONERA****************/
 
@@ -1343,7 +1345,7 @@ footer h3 {
     border: 4px solid black;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/Logos/user-logo-black.png);
+    background-image: url(../assets/Logos/user-logo-black.png);
     background-size: cover;
     min-height: 18.0em;
     min-width: 18.0em;
@@ -1716,3 +1718,7 @@ footer h3 {
 /**************************************************************************/
 /*****************************RESPONSIVE**********************************/
 /************************************************************************/
+
+.loginInvisible{
+    display: none;
+}
