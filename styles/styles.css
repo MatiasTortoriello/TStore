@@ -1732,6 +1732,8 @@ footer h3 {
 }
 #table td,
 #table th {
+    width: 40%;
     padding: 1rem;
     border: black 3px solid;
 }
+

@@ -95,10 +95,10 @@ function registrarMetodos(){
 
     }
 
-    
+    /*
     if(regexNumeroDeTarjetaValido.test(numeroDeTarjeta)){
     }
-      
+      */
     metodosRegistrados.push(metodoNuevo);    
     console.log(metodosRegistrados);
 

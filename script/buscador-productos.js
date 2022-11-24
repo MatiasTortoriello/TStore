@@ -101,7 +101,7 @@ let listaJuegos = [
 ]
 
 const categoriasDiv = document.querySelector(".categorias-lista");
-
+const numero= document.getElementById("asd")
 
 listaJuegos.forEach((item)=>{
 
@@ -115,26 +115,31 @@ listaJuegos.forEach((item)=>{
             <p>${item.nombre}</p>
         </a>
         <p class="etiquetapreciocategorias">${item.precio}.- 
-            <button id="agregar${item.id}"> 
+            <button id="${item.id}"> 
                 <i class="fa-solid fa-cart-shopping"></i>
             </button>
         </p>
     </div>`;
-    var boton = document.getElementById(`agregar${item.id}`)
-    boton.addEventListener('click', () => {
+    var boton = document.getElementById(`${item.id}`)
+
         
-            agregarAlCarrito(item.id)
-            console.log(listaJuegosComprados)
-        
-    })
+        boton.addEventListener('click', () => {
+
+                agregarAlCarrito(item.id)
+                console.log(listaJuegosComprados)
+                asd.innerHTML=`<img class="carritoheader" src="../assets/svg/shopping-cart-white.svg" alt=""> ${listaJuegosComprados.length} `
+            
+        })
 
 
 });
 
 
 function productoLocalStorage(){
-        localStorage.setItem("Juegos",JSON.stringify(listaJuegosComprados))
+    localStorage.setItem("Juegos", "Juego")
+    localStorage.setItem("Juegos",JSON.stringify(listaJuegosComprados))
 }
+
 
 
 
@@ -150,19 +155,19 @@ buscador.addEventListener("keyup",()=>{
             <p>${item.nombre}</p>
         </a>
         <p class="etiquetapreciocategorias">${item.precio}.- 
-            <button id="agregar${item.id}"> 
+            <button id="${item.id}" class="btn1"> 
                 <i class="fa-solid fa-cart-shopping"></i>
             </button>
         </p>
     </div>`;
+    var boton = document.getElementById(item.id)
 
-    var divBuscador= document.getElementsByClassName("categorias-div")    
-    var boton = document.getElementById(`agregar${item.id}`)
+        
     boton.addEventListener('click', () => {
-            
-                agregarAlCarrito(item.id)
-                console.log(listaJuegosComprados)
-           
+
+            agregarAlCarrito(item.id)
+            console.log(listaJuegosComprados)
+            asd.innerHTML=`<img class="carritoheader" src="../assets/svg/shopping-cart-white.svg" alt=""> ${listaJuegosComprados.length} `
         
     })
         

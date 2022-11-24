@@ -5,6 +5,7 @@ const direccionesAlias= document.querySelector("#direccionesAlias");
 const direcciones= document.querySelector("#direcciones");
 const metodos= document.querySelector(".mismetodosdiv");
 const table = document.querySelector('#tbodyMiCuenta');
+const table2 =document.querySelector('#tbody2')
 
 
 console.log(listaDeDirecciones)
@@ -13,7 +14,7 @@ function actualizarDirecciones () {
     listaDeDirecciones2.forEach((direccion) =>{   
         
 
-        
+        /*
         const d= document.createElement('div')
         d.innerHTML= `<p>${direccion.alias}</p>`
         const d2=document.createElement('div')
@@ -21,7 +22,7 @@ function actualizarDirecciones () {
         d2.innerHTML= `<p>${direccion.direccion}</p><button id="tachito${direccion.alias}" class="button-tachito"><i class="fas fa-trash"></i></button>`
         direccionesAlias.appendChild(d)
         direcciones.appendChild(d2)
-        
+        */
         
             table.innerHTML += `
                 <tr>
@@ -48,6 +49,47 @@ function actualizarDirecciones () {
     })
 
 }
+actualizarDirecciones ()
+
+function actualizarMetodos () {
+    let listaDeMetodos2 =JSON.parse(localStorage.getItem("Metodos"));
+    listaDeMetodos2.forEach((metodo) =>{   
+        
+
+        /*
+        const d= document.createElement('div')
+        d.innerHTML= `<p>${direccion.alias}</p>`
+        const d2=document.createElement('div')
+        d2.classList.add('div-metodos')
+        d2.innerHTML= `<p>${direccion.direccion}</p><button id="tachito${direccion.alias}" class="button-tachito"><i class="fas fa-trash"></i></button>`
+        direccionesAlias.appendChild(d)
+        direcciones.appendChild(d2)
+        */
+        
+            table2.innerHTML += `
+                <tr>
+                    <td>
+                        ${metodo.alias}
+                    </td>
+                    <td>
+                        <button id="tachito${metodo.alias}" class="button">X</button>
+                    </td>
+                </tr>
+            `;
+        
+        var tachitometodo = document.getElementById(`tachito${metodo.alias}`)
+    tachitometodo.addEventListener('click', (e) => {
+        console.log(tachitometodo.parentNode.parentNode)
+        tachitometodo.parentNode.parentNode.remove();
+            
+        
+    })
+
+    })
+    
+
+}
+actualizarMetodos ()
 /*
 actualizarDirecciones();
 
@@ -64,63 +106,3 @@ function actualizarMetodos () {
 */
 actualizarMetodos();
 
-
-/*
-class Player {
-
-    constructor({alias, direccion}) 
-    {
-        this.alias = alias;
-        this.direccion = direccion;
-    }
-}
-
-class Helper {
-    static bringStorage() {
-        let players = localStorage.getItem("players");
-        if (players === null) {
-            players = [];
-        } else {
-            players = JSON.parse(players);
-        }
-        return players;
-    }
-
-    static storageData(key, value) {
-        localStorage.setItem(key, JSON.stringify(value));
-    }
-
-    static savePlayer(player) {
-        const players = Helper.bringStorage();
-        players.push(player);
-        Helper.storageData('players', players);
-    }
-
-    static deletePlayer(alias) {
-        let players = Helper.bringStorage();
-        players = players.filter(player => player.alias != alias);
-        Helper.storageData('players', players);
-    }
-
-    static updateData() {
-        const table = document.querySelector('tbody');
-        table.innerHTML = '';
-        const players = Helper.bringStorage();
-        players.forEach(player => {
-            table.innerHTML += `
-                <tr>
-                    <td>
-                        ${player.alias}
-                    </td>
-                    <td>
-                        ${player.direccion}
-                    </td>
-                    <td>
-                        <button id="${player.alias}" class="button">X</button>
-                    </td>
-                </tr>
-            `;
-        });
-    }
-}
-*/
