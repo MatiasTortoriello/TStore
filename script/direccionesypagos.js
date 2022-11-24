@@ -1,3 +1,4 @@
+
 const abrirDirecciones= document.querySelector("#agregar-direccion");
 const abrirPagos= document.querySelector("#agregar-pago");
 const modalDireccion= document.querySelector("#modal-direcciones");
@@ -18,16 +19,54 @@ abrirDirecciones.addEventListener("click", () =>{
 abrirPagos.addEventListener("click", () =>{
     modalPagos.showModal();
 })
+
+/*
+const table = document.querySelector('tbody');
+
+registrarDireccion.addEventListener("submit", (e) => {
+
+    e.preventDefault();
+    Helper.savePlayer(new Player({
+        
+        alias: agregarAlias.value,
+        direccion: agregarDireccion.value
+    }));
+
+    Helper.updateData();
+    registrarDireccion.reset()
+    registrarDireccion.submit();
+});
+
+document.querySelector('tbody').addEventListener("click", (e) => {
+
+
+    e.preventDefault();
+    e.stopPropagation();
+
+    if (e.target.tagName === 'button') {
+
+        Helper.deletePlayer(e.target.alias);
+        Helper.updateData();
+
+    }
+    Helper.updateData();
+});
+*/
+
+
+
 registrarDireccion.addEventListener("submit", (e)=>{
     e.preventDefault();
     registrarDirecciones();
     registrarDireccion.submit();
+    actualizarDirecciones();
     })
 
 botonAgregarMetodo.addEventListener("submit", (e)=>{
     e.preventDefault();
     registrarMetodos();
     botonAgregarMetodo.submit();
+    actualizarMetodos();
     })
 
     
@@ -56,10 +95,10 @@ function registrarMetodos(){
 
     }
 
-    /*
+    
     if(regexNumeroDeTarjetaValido.test(numeroDeTarjeta)){
     }
-    */  
+      
     metodosRegistrados.push(metodoNuevo);    
     console.log(metodosRegistrados);
 

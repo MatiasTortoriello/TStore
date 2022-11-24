@@ -1,4 +1,4 @@
-const localParseado= JSON.parse("Juegos")
+const localParseado= JSON.parse(localStorage.getItem("Juegos"));
 const contenedorCarrito = document.getElementById("tabla-carrito")
 
 const actualizarCarrito = () => {
@@ -23,6 +23,6 @@ localParseado.forEach((prod) => {
     </td>
     `
     contenedorCarrito.appendChild('tr')
-    console.log(listaJuegosComprados)
+    console.log(localParseado)
 })
 }

@@ -133,7 +133,6 @@ listaJuegos.forEach((item)=>{
 
 
 function productoLocalStorage(){
-        localStorage.setItem("Juegos", "Juego")
         localStorage.setItem("Juegos",JSON.stringify(listaJuegosComprados))
 }
 
@@ -157,12 +156,13 @@ buscador.addEventListener("keyup",()=>{
         </p>
     </div>`;
 
-        
+    var divBuscador= document.getElementsByClassName("categorias-div")    
     var boton = document.getElementById(`agregar${item.id}`)
     boton.addEventListener('click', () => {
-        
-            agregarAlCarrito(item.id)
-            console.log(listaJuegosComprados)
+            
+                agregarAlCarrito(item.id)
+                console.log(listaJuegosComprados)
+           
         
     })
         

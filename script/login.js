@@ -12,8 +12,7 @@ loguearse.addEventListener('submit', (e) => {
 
         if(usuario.nombre == nombre.value && usuario.password == password.value){
             alert('Ingreso correcto. Bienvenido!')
-           loguearse.submit();
-           loginVisible.classList.add('loginInvisible');
+            loguearse.submit();
             
         } else {
             alert('Usuario o Constraseña inválidos')
