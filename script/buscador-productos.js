@@ -101,11 +101,7 @@ let listaJuegos = [
 ]
 
 const categoriasDiv = document.querySelector(".categorias-lista");
-const numero= document.getElementById("asd")
 
-listaJuegos.forEach((item)=>{
-
-})
 
 listaJuegos.forEach((item)=>{
     categoriasDiv.innerHTML+=
@@ -136,7 +132,6 @@ listaJuegos.forEach((item)=>{
 
 
 function productoLocalStorage(){
-    localStorage.setItem("Juegos", "Juego")
     localStorage.setItem("Juegos",JSON.stringify(listaJuegosComprados))
 }
 
