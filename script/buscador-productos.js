@@ -104,10 +104,6 @@ const categoriasDiv = document.querySelector(".categorias-lista");
 
 
 listaJuegos.forEach((item)=>{
-
-})
-
-listaJuegos.forEach((item)=>{
     categoriasDiv.innerHTML+=
     `<div class="categorias-div">
         <a href="../pages/producto.html">
@@ -133,7 +129,7 @@ listaJuegos.forEach((item)=>{
 
 
 function productoLocalStorage(){
-        localStorage.setItem("Juegos",JSON.stringify(listaJuegosComprados))
+    localStorage.setItem("Juegos",JSON.stringify(listaJuegosComprados))
 }
 
 
