@@ -96,7 +96,7 @@ function registrarMetodos(){
     }
 
     
-    if(regexNumeroDeTarjetaValido.test(numeroDeTarjeta)){
+    if(regexNumeroDeTarjetaValido.test(numeroDeTarjeta.value)){
         metodosRegistrados.push(metodoNuevo);    
         console.log(metodosRegistrados);
 
