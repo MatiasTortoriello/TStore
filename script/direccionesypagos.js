@@ -102,6 +102,8 @@ function registrarMetodos(){
 
         metodosLocalStorage();
     
+    } else {
+        alert("Número de tarjeta inválido")
     }
     
       
