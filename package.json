@@ -1,0 +1,11 @@
+{
+  "name": "tmt-solutions",
+  "version": "1.0.0",
+  "description": "Proyecto de Sitio Web. Trabajo Práctico para la materia de Programación Web 1 de la Universidad Nacional de La Matanza.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
