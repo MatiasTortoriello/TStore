@@ -1,7 +1,7 @@
 {
-  "name": "tmt-solutions",
+  "name": "tm-store",
   "version": "1.0.0",
-  "description": "Proyecto de Sitio Web. Trabajo Práctico para la materia de Programación Web 1 de la Universidad Nacional de La Matanza.",
+  "description": "Proyecto de Sitio Web.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
