@@ -22,7 +22,7 @@ localParseado.forEach((prod) => {
         ${prod.precio}
     </td>
     `
-    contenedorCarrito.appendChild('tr')
+    contenedorCarrito.appendChild(tr)
     console.log(localParseado)
 })
 }
