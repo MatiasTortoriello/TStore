@@ -12,7 +12,7 @@ var ageofempiresimg ="../assets/ImgJuegos/Strategy/Age-of-Empires.jpg"
 let listaJuegos = [
     
     {
-        id: 01,
+        id: '01',
         nombre: "dark souls",
         cantidad: 1,
         genero: "Rpg",
@@ -23,7 +23,7 @@ let listaJuegos = [
     },
 
     {
-        id: 02,
+        id: '02',
         nombre: "devil may cry dmc",
         cantidad: 1,
         genero: "accion",
@@ -34,7 +34,7 @@ let listaJuegos = [
     },
 
     {
-        id: 03,
+        id: '03',
         nombre: "devil may cry 5",
         cantidad: 1,
         genero: "accion",
@@ -45,7 +45,7 @@ let listaJuegos = [
     },
 
     {
-        id: 04,
+        id: '04',
         nombre: "god of war",
         cantidad: 1,
         genero: "aventura",
@@ -56,7 +56,7 @@ let listaJuegos = [
     },
 
     {
-        id: 05,
+        id: '05',
         nombre: "need for speed",
         cantidad: 1,
         genero: "carreras",
@@ -67,7 +67,7 @@ let listaJuegos = [
     },
 
     {
-        id: 06,
+        id: '06',
         nombre: "nfs heat",
         cantidad: 1,
         genero: "carreras",
@@ -78,7 +78,7 @@ let listaJuegos = [
     },
 
     {
-        id: 07,
+        id: '07',
         nombre: "call of duty: modern warfare",
         cantidad: 1,
         genero: "terror",
@@ -89,7 +89,7 @@ let listaJuegos = [
     },
 
     {
-        id: 08,
+        id: '08',
         nombre: "age of empires 3",
         cantidad: 1,
         genero: "rts",
